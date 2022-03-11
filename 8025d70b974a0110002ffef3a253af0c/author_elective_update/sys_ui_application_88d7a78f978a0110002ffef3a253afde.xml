@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="DELETE">
+        <active>true</active>
+        <hint/>
+        <name>Scheduled Reservations</name>
+        <order/>
+        <roles>x_616811_car_renta.scheduled_reservations_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-10 06:23:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>88d7a78f978a0110002ffef3a253afde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scheduled Reservations</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_ui_application_88d7a78f978a0110002ffef3a253afde</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-10 06:23:13</sys_updated_on>
+    </sys_ui_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sys_ui_application_88d7a78f978a0110002ffef3a253afde</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>Scheduled Reservations</name><order/><roles>x_616811_car_renta.scheduled_reservations_user</roles><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>maryanne.labasan</sys_created_by><sys_created_on>2022-03-10 06:23:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>88d7a78f978a0110002ffef3a253afde</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Scheduled Reservations</sys_name><sys_overrides/><sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package><sys_policy/><sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope><sys_update_name>sys_ui_application_88d7a78f978a0110002ffef3a253afde</sys_update_name><sys_updated_by>maryanne.labasan</sys_updated_by><sys_updated_on>2022-03-10 06:23:13</sys_updated_on></sys_ui_application></record_update>]]></payload>
+        <payload_hash>-1800901064</payload_hash>
+        <record_name>Scheduled Reservations</record_name>
+        <reverted_from/>
+        <source>8025d70b974a0110002ffef3a253af0e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-10 06:23:13</sys_created_on>
+        <sys_id>00d7a78f978a0110002ffef3a253afe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f727ee80a0000001</sys_recorded_at>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-10 06:23:13</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>48d7a78f588a01101afa24f43dd076e0</update_guid>
+        <update_guid_history>48d7a78f588a01101afa24f43dd076e0:-1800901064</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-10 06:38:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_application">sys_ui_application</sys_db_object>
+        <sys_id>6667bfa4ce7041eca108387ee6b26b81</sys_id>
+        <sys_metadata>88d7a78f978a0110002ffef3a253afde</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scheduled Reservations</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sys_ui_application_88d7a78f978a0110002ffef3a253afde</sys_update_name>
+        <sys_update_version display_value="sys_ui_application_88d7a78f978a0110002ffef3a253afde">00d7a78f978a0110002ffef3a253afe1</sys_update_version>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-10 06:38:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

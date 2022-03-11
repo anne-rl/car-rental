@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_616811_car_renta.receptionist" name="x_616811_car_renta.receptionist">fce553c7974a0110002ffef3a253af09</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-10 05:04:55</sys_created_on>
+        <sys_id>b0e553c7974a0110002ffef3a253af0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>fce553c7974a0110002ffef3a253af09</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_embedded_help_role_b0e553c7974a0110002ffef3a253af0b</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-10 05:04:55</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

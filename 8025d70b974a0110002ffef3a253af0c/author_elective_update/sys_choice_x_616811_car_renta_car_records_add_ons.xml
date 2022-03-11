@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="add_ons" table="x_616811_car_renta_car_records" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>add_ons</element>
+            <name>x_616811_car_renta_car_records</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-10 05:35:12</sys_created_on>
+            <sys_id>2cdc1b03978a0110002ffef3a253af79</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>add_ons</sys_name>
+            <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+            <sys_update_name>sys_choice_x_616811_car_renta_car_records_add_ons</sys_update_name>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-10 05:35:12</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>add_ons</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>GPS Navigation</label>
+            <language>en</language>
+            <name>x_616811_car_renta_car_records</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>nieltabar</sys_created_by>
+            <sys_created_on>2022-03-10 08:20:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f0a28493974e0110002ffef3a253af6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nieltabar</sys_updated_by>
+            <sys_updated_on>2022-03-10 08:20:26</sys_updated_on>
+            <value>gps navigation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>add_ons</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Extra Tire</label>
+            <language>en</language>
+            <name>x_616811_car_renta_car_records</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>nieltabar</sys_created_by>
+            <sys_created_on>2022-03-10 08:20:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>70a28493974e0110002ffef3a253af6d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nieltabar</sys_updated_by>
+            <sys_updated_on>2022-03-10 08:20:26</sys_updated_on>
+            <value>extra tire</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>add_ons</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Prepaid Fuel</label>
+            <language>en</language>
+            <name>x_616811_car_renta_car_records</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>nieltabar</sys_created_by>
+            <sys_created_on>2022-03-10 08:20:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fca28493974e0110002ffef3a253af6d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nieltabar</sys_updated_by>
+            <sys_updated_on>2022-03-10 08:20:26</sys_updated_on>
+            <value>prepaid fuel</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>add_ons</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Car Seat</label>
+            <language>en</language>
+            <name>x_616811_car_renta_car_records</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>nieltabar</sys_created_by>
+            <sys_created_on>2022-03-10 08:20:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7ca28493974e0110002ffef3a253af6e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nieltabar</sys_updated_by>
+            <sys_updated_on>2022-03-10 08:20:26</sys_updated_on>
+            <value>car seat</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>add_ons</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Child Seat</label>
+            <language>en</language>
+            <name>x_616811_car_renta_car_records</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>nieltabar</sys_created_by>
+            <sys_created_on>2022-03-10 08:20:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f8a28493974e0110002ffef3a253af6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nieltabar</sys_updated_by>
+            <sys_updated_on>2022-03-10 08:20:26</sys_updated_on>
+            <value>child seat</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>add_ons</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Safety Indicators</label>
+            <language>en</language>
+            <name>x_616811_car_renta_car_records</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>nieltabar</sys_created_by>
+            <sys_created_on>2022-03-10 08:20:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>78a28493974e0110002ffef3a253af70</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nieltabar</sys_updated_by>
+            <sys_updated_on>2022-03-10 08:20:26</sys_updated_on>
+            <value>safety indicators</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

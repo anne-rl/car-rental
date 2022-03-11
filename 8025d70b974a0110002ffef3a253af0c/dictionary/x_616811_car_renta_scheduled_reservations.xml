@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Car Reservation" max_length="40" name="x_616811_car_renta_scheduled_reservations" sizeclass="0" type="collection">
+        <element label="Applicant" mandatory="true" max_length="40" name="applicant" type="string"/>
+        <element label="Car" mandatory="true" max_length="40" name="car" type="string"/>
+        <element label="Remarks" max_length="40" name="remarks" type="string"/>
+        <element label="Rental Duration" mandatory="true" max_length="40" name="rental_duration" type="glide_duration"/>
+    </element>
+</database>
