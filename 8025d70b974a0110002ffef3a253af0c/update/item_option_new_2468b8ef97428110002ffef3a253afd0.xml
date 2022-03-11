@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
-        <attributes/>
-        <cat_item display_value="Car Rental Reservation">e9065c6397ce4110002ffef3a253af45</cat_item>
+        <attributes>is_</attributes>
+        <cat_item display_value="Car Rental Reservation">2627b0af97428110002ffef3a253afdf</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -30,21 +30,21 @@
         <list_table/>
         <lookup_label/>
         <lookup_price/>
-        <lookup_table/>
+        <lookup_table>x_616811_car_renta_scheduled_reservations</lookup_table>
         <lookup_unique>false</lookup_unique>
-        <lookup_value/>
+        <lookup_value>car</lookup_value>
         <macro/>
         <macroponent/>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>copy_of_car</name>
-        <order/>
+        <name>car</name>
+        <order>200</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Copy of Select A Car to rent</question_text>
+        <question_text>Select A Car to Rent</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -66,16 +66,16 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>nieltabar</sys_created_by>
-        <sys_created_on>2022-03-11 06:25:04</sys_created_on>
-        <sys_id>20d130e797428110002ffef3a253afdd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Copy of Select A Car to rent</sys_name>
+        <sys_created_on>2022-03-11 06:55:08</sys_created_on>
+        <sys_id>2468b8ef97428110002ffef3a253afd0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Select A Car to Rent</sys_name>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
-        <sys_update_name>item_option_new_20d130e797428110002ffef3a253afdd</sys_update_name>
+        <sys_update_name>item_option_new_2468b8ef97428110002ffef3a253afd0</sys_update_name>
         <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-03-11 06:25:04</sys_updated_on>
+        <sys_updated_on>2022-03-11 07:36:49</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>
@@ -94,22 +94,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=20d130e797428110002ffef3a253afdd"/>
-    <fx_price action="delete_multiple" query="id=20d130e797428110002ffef3a253afdd"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=2468b8ef97428110002ffef3a253afd0"/>
+    <fx_price action="delete_multiple" query="id=2468b8ef97428110002ffef3a253afd0"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>20d130e797428110002ffef3a253afdd</id>
+        <id>2468b8ef97428110002ffef3a253afd0</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>nieltabar</sys_created_by>
-        <sys_created_on>2022-03-11 06:25:04</sys_created_on>
-        <sys_id>acd130e797428110002ffef3a253afdf</sys_id>
+        <sys_created_on>2022-03-11 06:55:08</sys_created_on>
+        <sys_id>5db8782397828110002ffef3a253af5f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-03-11 06:25:04</sys_updated_on>
+        <sys_updated_on>2022-03-11 06:55:08</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -117,16 +117,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>20d130e797428110002ffef3a253afdd</id>
+        <id>2468b8ef97428110002ffef3a253afd0</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>nieltabar</sys_created_by>
-        <sys_created_on>2022-03-11 06:25:04</sys_created_on>
-        <sys_id>e8d130e797428110002ffef3a253afde</sys_id>
+        <sys_created_on>2022-03-11 06:55:08</sys_created_on>
+        <sys_id>99b8782397828110002ffef3a253af5e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-03-11 06:25:04</sys_updated_on>
+        <sys_updated_on>2022-03-11 06:55:08</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
