@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Meeting" max_length="40" name="x_616811_car_renta_meeting" type="collection">
-        <element label="Attendees" max_length="4000" name="attendees" type="glide_list"/>
-        <element label="Datetime" max_length="40" name="datetime" type="glide_date_time"/>
-        <element label="Duration" max_length="40" name="duration" type="glide_duration"/>
+    <element label="Meeting" max_length="40" name="x_616811_car_renta_meeting" sizeclass="0" type="collection">
+        <element label="Applicant Name" max_length="32" name="applicant_name" reference="sys_user" type="reference"/>
+        <element label="Attendees" mandatory="true" max_length="4000" name="attendees" reference="sys_user" type="glide_list"/>
+        <element label="Datetime" mandatory="true" max_length="40" name="datetime" type="glide_date_time"/>
+        <element label="Duration" mandatory="true" max_length="40" name="duration" type="glide_duration"/>
+        <element label="Meeting Agenda" mandatory="true" max_length="1000" name="meeting_agenda" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Room" max_length="32" name="room" reference="x_616811_car_renta_meeting_room" type="reference"/>
+        <element label="Room" mandatory="true" max_length="32" name="room" reference="x_616811_car_renta_meeting_room" type="reference"/>
         <index name="index">
+            <element name="applicant_name"/>
+        </index>
+        <index name="index2">
             <element name="room"/>
         </index>
     </element>

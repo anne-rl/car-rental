@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="95ef23dc97d20110002ffef3a253af21" sys_domain="global" table="x_616811_car_renta_holidays" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-14 04:11:34</sys_created_on>
+            <sys_id>9e00f3dc97d20110002ffef3a253aff5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_616811_car_renta_holidays" sys_domain="global" view="Default view">95ef23dc97d20110002ffef3a253af21</sys_ui_section>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-14 04:11:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>1</position>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-14 04:11:34</sys_created_on>
+            <sys_id>9200f3dc97d20110002ffef3a253aff6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_616811_car_renta_holidays" sys_domain="global" view="Default view">95ef23dc97d20110002ffef3a253af21</sys_ui_section>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-14 04:11:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date</element>
+            <position>2</position>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-14 04:11:34</sys_created_on>
+            <sys_id>9600f3dc97d20110002ffef3a253aff6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_616811_car_renta_holidays" sys_domain="global" view="Default view">95ef23dc97d20110002ffef3a253af21</sys_ui_section>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-14 04:11:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_616811_car_renta_holidays</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-14 04:10:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>95ef23dc97d20110002ffef3a253af21</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_616811_car_renta_holidays</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+            <sys_update_name>sys_ui_section_95ef23dc97d20110002ffef3a253af21</sys_update_name>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-14 04:10:57</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

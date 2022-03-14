@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Meeting Room" max_length="40" name="x_616811_car_renta_meeting_room" type="collection">
+    <element label="Meeting Room" max_length="40" name="x_616811_car_renta_meeting_room" sizeclass="0" type="collection">
         <element label="Available" max_length="40" name="available" type="boolean"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Room Name" max_length="40" name="room_name" type="string"/>
-        <element label="Seating Capacity" max_length="40" name="seating_capacity" type="integer"/>
+        <element label="Room Name" mandatory="true" max_length="40" name="room_name" type="string"/>
+        <element label="Seating Capacity" mandatory="true" max_length="40" name="seating_capacity" type="integer"/>
     </element>
 </database>

@@ -10,23 +10,23 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_616811_car_renta_meeting_room" name="x_616811_car_renta_meeting_room" sys_domain="global" view="Default view">4e722ca397028110002ffef3a253af2d</sys_ui_form>
-            <sys_ui_section caption="NULL" display_value="" name="x_616811_car_renta_meeting_room" sys_domain="global" view="Default view">c45268a397028110002ffef3a253af56</sys_ui_section>
+            <sys_ui_section caption="Meeting Room Details" display_value="Meeting Room Details" name="x_616811_car_renta_meeting_room" sys_domain="global" view="Default view">c45268a397028110002ffef3a253af56</sys_ui_section>
             <sys_updated_by>maryanne.labasan</sys_updated_by>
             <sys_updated_on>2022-03-11 05:17:59</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>1</position>
             <sys_created_by>maryanne.labasan</sys_created_by>
-            <sys_created_on>2022-03-11 05:17:59</sys_created_on>
+            <sys_created_on>2022-03-14 01:51:34</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>42722ca397028110002ffef3a253af32</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>27ffc7d897520110002ffef3a253af38</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_616811_car_renta_meeting_room" name="x_616811_car_renta_meeting_room" sys_domain="global" view="Default view">4e722ca397028110002ffef3a253af2d</sys_ui_form>
-            <sys_ui_section caption="Room Availability" display_value="Room Availability" name="x_616811_car_renta_meeting_room" sys_domain="global" view="Default view">8e722ca397028110002ffef3a253af2c</sys_ui_section>
+            <sys_ui_section caption="Other Information" display_value="Other Information" name="x_616811_car_renta_meeting_room" sys_domain="global" view="Default view">e7ffc7d897520110002ffef3a253af35</sys_ui_section>
             <sys_updated_by>maryanne.labasan</sys_updated_by>
-            <sys_updated_on>2022-03-11 05:17:59</sys_updated_on>
+            <sys_updated_on>2022-03-14 01:53:58</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_616811_car_renta_meeting_room</name>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-10 09:11:44</sys_created_on>
+        <sys_id>d46e8013978e0110002ffef3a253af2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_616811_car_renta_client_records.x_616811_car_renta.client_records_user</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_security_acl display_value="x_616811_car_renta_client_records">186e8013978e0110002ffef3a253af28</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_d46e8013978e0110002ffef3a253af2b</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-10 09:11:44</sys_updated_on>
+        <sys_user_role display_value="x_616811_car_renta.client_records_user" name="x_616811_car_renta.client_records_user">106e4013978e0110002ffef3a253af6f</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sys_security_acl_role_d46e8013978e0110002ffef3a253af2b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>maryanne.labasan</sys_created_by><sys_created_on>2022-03-10 09:11:44</sys_created_on><sys_id>d46e8013978e0110002ffef3a253af2b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_616811_car_renta_client_records.x_616811_car_renta.client_records_user</sys_name><sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package><sys_policy/><sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope><sys_security_acl display_value="x_616811_car_renta_client_records">186e8013978e0110002ffef3a253af28</sys_security_acl><sys_update_name>sys_security_acl_role_d46e8013978e0110002ffef3a253af2b</sys_update_name><sys_updated_by>maryanne.labasan</sys_updated_by><sys_updated_on>2022-03-10 09:11:44</sys_updated_on><sys_user_role display_value="x_616811_car_renta.client_records_user" name="x_616811_car_renta.client_records_user">106e4013978e0110002ffef3a253af6f</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1821711452</payload_hash>
+        <record_name>x_616811_car_renta_client_records.x_616811_car_renta.client_records_user</record_name>
+        <reverted_from/>
+        <source>8025d70b974a0110002ffef3a253af0e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-10 09:11:44</sys_created_on>
+        <sys_id>d86e8013978e0110002ffef3a253af5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f73192f530000001</sys_recorded_at>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-10 09:11:44</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>186e8013338e0110502968098754e82d</update_guid>
+        <update_guid_history>186e8013338e0110502968098754e82d:1821711452</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_616811_car_renta_client_records.x_616811_car_renta.client_records_user">7634731497160110002ffef3a253af0a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-14 04:29:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0594e6e4bf254948841a788dbcdd3a10</sys_id>
+        <sys_metadata>d46e8013978e0110002ffef3a253af2b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_616811_car_renta_client_records.x_616811_car_renta.client_records_user</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent display_value="x_616811_car_renta_client_records">186e8013978e0110002ffef3a253af28</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_d46e8013978e0110002ffef3a253af2b</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_d46e8013978e0110002ffef3a253af2b">d86e8013978e0110002ffef3a253af5f</sys_update_version>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-14 04:29:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
