@@ -17,7 +17,7 @@
         <mobile_title>View All Clients</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>sys_user</name>
-        <order>200</order>
+        <order>230</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -28,7 +28,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>489e8413978e0110002ffef3a253afb8</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Clients</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
@@ -36,7 +36,7 @@
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sys_app_module_489e8413978e0110002ffef3a253afb8</sys_update_name>
         <sys_updated_by>maryanne.labasan</sys_updated_by>
-        <sys_updated_on>2022-03-14 04:27:15</sys_updated_on>
+        <sys_updated_on>2022-03-15 02:47:11</sys_updated_on>
         <timeline_page/>
         <title>Clients</title>
         <uncancelable>false</uncancelable>

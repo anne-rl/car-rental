@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="type" table="x_616811_car_renta_calendar_days" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <name>x_616811_car_renta_calendar_days</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-15 02:49:17</sys_created_on>
+            <sys_id>cfc6a03497920110002ffef3a253af22</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>type</sys_name>
+            <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+            <sys_update_name>sys_choice_x_616811_car_renta_calendar_days_type</sys_update_name>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-15 02:49:17</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Holiday</label>
+            <language>en</language>
+            <name>x_616811_car_renta_calendar_days</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-15 02:49:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bac6a03497920110002ffef3a253af22</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-15 02:49:17</sys_updated_on>
+            <value>holiday</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Business Day</label>
+            <language>en</language>
+            <name>x_616811_car_renta_calendar_days</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-15 02:49:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>07c6a03497920110002ffef3a253af24</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-15 02:49:17</sys_updated_on>
+            <value>business day</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

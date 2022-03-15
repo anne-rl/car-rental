@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Car Rental Reservation">041ddb03978a0110002ffef3a253af5f</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>SEPARATOR</link_type>
+        <map_page/>
+        <mobile_title>Holidays</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_616811_car_renta_holidays</name>
+        <order>220</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-14 02:52:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2d9d1fd897920110002ffef3a253afca</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Calendar Days</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_app_module_2d9d1fd897920110002ffef3a253afca</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-15 02:26:43</sys_updated_on>
+        <timeline_page/>
+        <title>Calendar Days</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sys_app_module_2d9d1fd897920110002ffef3a253afca</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Car Rental Reservation">041ddb03978a0110002ffef3a253af5f</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>SEPARATOR</link_type><map_page/><mobile_title>Holidays</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_616811_car_renta_holidays</name><order>220</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>maryanne.labasan</sys_created_by><sys_created_on>2022-03-14 02:52:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2d9d1fd897920110002ffef3a253afca</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Calendar Days</sys_name><sys_overrides/><sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package><sys_policy/><sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope><sys_update_name>sys_app_module_2d9d1fd897920110002ffef3a253afca</sys_update_name><sys_updated_by>maryanne.labasan</sys_updated_by><sys_updated_on>2022-03-15 02:26:43</sys_updated_on><timeline_page/><title>Calendar Days</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1750432387</payload_hash>
+        <record_name>Calendar Days</record_name>
+        <reverted_from/>
+        <source>242efc2b97828110002ffef3a253af0d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-15 02:26:43</sys_created_on>
+        <sys_id>94a1683c97520110002ffef3a253af25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f8b662b9f0000001</sys_recorded_at>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-15 02:26:43</sys_updated_on>
+        <type>Module</type>
+        <update_guid>dca1683cae520110a25d9a445156af24</update_guid>
+        <update_guid_history>dca1683cae520110a25d9a445156af24:1750432387,5990f7dcf4d201109c18f6c5a9056ae3:1605030867,44ed9fd8fa920110c7f5c6cc3f58ace8:730412812</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Calendar Days">00d3ecfc97520110002ffef3a253af3c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-15 02:36:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>0de685aa4c1b4d91849dac97348c16e1</sys_id>
+        <sys_metadata>2d9d1fd897920110002ffef3a253afca</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Calendar Days</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sys_app_module_2d9d1fd897920110002ffef3a253afca</sys_update_name>
+        <sys_update_version display_value="sys_app_module_2d9d1fd897920110002ffef3a253afca">94a1683c97520110002ffef3a253af25</sys_update_version>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-15 02:36:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

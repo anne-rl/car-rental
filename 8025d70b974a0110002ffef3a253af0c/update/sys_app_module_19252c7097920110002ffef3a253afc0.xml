@@ -8,33 +8,33 @@
         <hint/>
         <homepage/>
         <image/>
-        <link_type>SEPARATOR</link_type>
+        <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>Clients</mobile_title>
+        <mobile_title>All</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name/>
-        <order>220</order>
+        <name>x_616811_car_renta_calendar_days</name>
+        <order>200</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_616811_car_renta.admin</roles>
+        <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>maryanne.labasan</sys_created_by>
-        <sys_created_on>2022-03-11 04:39:59</sys_created_on>
+        <sys_created_on>2022-03-15 02:46:30</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>6da910e797ce4110002ffef3a253afb4</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Management</sys_name>
+        <sys_id>19252c7097920110002ffef3a253afc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
-        <sys_update_name>sys_app_module_6da910e797ce4110002ffef3a253afb4</sys_update_name>
+        <sys_update_name>sys_app_module_19252c7097920110002ffef3a253afc0</sys_update_name>
         <sys_updated_by>maryanne.labasan</sys_updated_by>
-        <sys_updated_on>2022-03-15 02:47:05</sys_updated_on>
+        <sys_updated_on>2022-03-15 02:46:30</sys_updated_on>
         <timeline_page/>
-        <title>Management</title>
+        <title>All</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
