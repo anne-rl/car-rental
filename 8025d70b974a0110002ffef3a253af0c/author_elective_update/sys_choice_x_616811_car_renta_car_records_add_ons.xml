@@ -86,14 +86,14 @@
             <name>x_616811_car_renta_car_records</name>
             <sequence>3</sequence>
             <synonyms/>
-            <sys_created_by>nieltabar</sys_created_by>
-            <sys_created_on>2022-03-10 08:20:26</sys_created_on>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-16 07:02:21</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>7ca28493974e0110002ffef3a253af6e</sys_id>
+            <sys_id>7f4a2a4d97da4110002ffef3a253af9d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>nieltabar</sys_updated_by>
-            <sys_updated_on>2022-03-10 08:20:26</sys_updated_on>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-16 07:02:21</sys_updated_on>
             <value>car seat</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">

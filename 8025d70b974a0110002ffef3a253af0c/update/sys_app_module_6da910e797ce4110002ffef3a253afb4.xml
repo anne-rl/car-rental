@@ -5,7 +5,7 @@
         <assessment/>
         <device_type/>
         <filter/>
-        <hint/>
+        <hint>This menu is for the administators to manage clients and calendar days</hint>
         <homepage/>
         <image/>
         <link_type>SEPARATOR</link_type>
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6da910e797ce4110002ffef3a253afb4</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Management</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sys_app_module_6da910e797ce4110002ffef3a253afb4</sys_update_name>
         <sys_updated_by>maryanne.labasan</sys_updated_by>
-        <sys_updated_on>2022-03-15 02:47:05</sys_updated_on>
+        <sys_updated_on>2022-03-16 05:31:51</sys_updated_on>
         <timeline_page/>
         <title>Management</title>
         <uncancelable>false</uncancelable>

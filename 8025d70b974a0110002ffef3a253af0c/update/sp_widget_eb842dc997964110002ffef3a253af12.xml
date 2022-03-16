@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+ var c = this;
+    c.uiAction = function(action) {
+
+        c.data.action = action;
+ if (c.data.action == 'delete') {
+var ans = confirm("Are you sure, you want to delete it?");
+      if (ans == true)
+	update();
+		else
+		return false;
+            }
+
+ function update() {
+            c.server.update().then(function() {
+                c.data.action = undefined;
+                c.data.result = "completed";
+            });
+            window.setTimeout(restartscreen, 2000);
+
+            function restartscreen() {
+                location.reload(true);
+            }
+        }
+ };
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.header {
+ background-color: #2b0c99 
+}</css>
+        <data_table>sp_instance_vlist</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>table,filter,maximum_entries,display_field,color,size,glyph,sp_page</field_list>
+        <has_preview>false</has_preview>
+        <id>simple_list_modified</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Simple List Modified</name>
+        <option_schema>[{"name":"always_show","section":"Behavior","label":"Show even when empty","type":"boolean"},{"name":"panel_body_height","section":"Presentation","label":"List body height","type":"string"},{"name":"image_field","section":"Presentation","label":"Image field","type":"field_name"},{"name":"secondary_fields","section":"Data","label":"Secondary fields","type":"field_list"},{"name":"rounded_images","section":"Presentation","label":"Rounded images","type":"boolean"},{"displayValue":"Page","name":"list_page","section":"Data","label":"List page","type":"reference","value":"sp_page","ed":{"reference":"sp_page"}},{"name":"hide_footer","section":"Presentation","label":"Hide Footer","type":"boolean"},{"displayValue":"UI View","hint":"View to use when target page is a form","name":"view","section":"Behavior","label":"View","type":"reference","value":"sys_ui_view","ed":{"reference":"sys_ui_view"}},{"hint":"If checked, Simple List will not automatically updated based on changes to the filtered records","name":"disable_record_watcher","section":"Behavior","label":"Disable record watcher","type":"boolean"},{"name":"filter_acls","section":"Data","default_value":"false","label":"Enforce field-level Read ACLs on Filter query terms (may alter the query for unprivileged users)","type":"boolean"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[function() {
+    var gr = $sp.getRecord();
+
+    // Get table & sys_id
+    data.table = input.table || $sp.getParameter("table");
+    data.sys_id = input.sys_id || $sp.getParameter("sys_id");
+
+    data.canRead = gr.canRead();
+    if (!data.canRead)
+        return;
+
+    data.canWrite = gr.canWrite();
+    if (!data.canWrite)
+        return;
+
+    var states = "";
+    var b = $sp.getField(gr, 'state');
+    if (b != null)
+        states = b.value;
+	
+	var stages = "";
+	var t = $sp.getField(gr, 'stage');
+	if(t != null)
+		stages = t.value;
+	
+	var ReqCancel = "";
+	var c = $sp.getField(gr, 'u_asked_cancellation');
+	if(c != null)
+	ReqCancel = c.value;	
+
+
+    // Valid GlideRecord
+    gr = new GlideRecord(data.table);
+    if (!gr.isValid())
+        return;
+
+    // Valid sys_id
+    if (!gr.get(data.sys_id))
+        return;
+
+if (input && input.action) {
+        var action = input.action;
+ if (input.action == 'delete')
+gr.deleteRecord();
+}}]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>nieltabar</sys_created_by>
+        <sys_created_on>2022-03-16 01:57:36</sys_created_on>
+        <sys_id>eb842dc997964110002ffef3a253af12</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Simple List Modified</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sp_widget_eb842dc997964110002ffef3a253af12</sys_update_name>
+        <sys_updated_by>nieltabar</sys_updated_by>
+        <sys_updated_on>2022-03-16 02:31:35</sys_updated_on>
+        <template><![CDATA[<div class="panel b ng-scope">
+    <div ng-if="data.states != 4"> <!--4 is the value of cancel -->
+        <div class="panel-heading bg-primary panel-la-jolla-default">Actions</div>
+        <div class="panel-body" >
+          <button type="button" class="btn btn-danger btn-block" ng-click="c.uiAction('delete')">Delete</button>
+        </div>
+      </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
