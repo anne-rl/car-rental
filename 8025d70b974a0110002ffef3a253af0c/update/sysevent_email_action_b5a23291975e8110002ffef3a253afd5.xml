@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
     <sysevent_email_action action="INSERT_OR_UPDATE">
-        <action_insert>true</action_insert>
+        <action_insert>false</action_insert>
         <action_update>true</action_update>
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
-        <category display_value="Customer Service" name="Customer Service">a69d02137f232200ee2e108c3ffa9130</category>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
         <collection>x_616811_car_renta_car_records</collection>
-        <condition table="x_616811_car_renta_car_records">sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^EQ<item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Today@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()"/>
+        <condition table="x_616811_car_renta_car_records">nameVALCHANGES^ORadd_onsVALCHANGES^ORdescriptionVALCHANGES^ORseating_capacityVALCHANGES^ORtypeVALCHANGES^ORrentVALCHANGESjavascript:global.getCurrencyFilter('x_616811_car_renta_car_records','rent', 'USD;USD')^ORnameVALCHANGES^ORinsuranceVALCHANGES^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="add_ons" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="description" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="seating_capacity" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="type" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="rent" goto="false" newquery="false" operator="VALCHANGES" or="true" value="javascript:global.getCurrencyFilter('x_616811_car_renta_car_records','rent', 'USD;USD')"/>
+            <item endquery="false" field="name" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="insurance" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <content_type>text/html</content_type>
         <default_interval/>
-        <description>Car Rental Reservation Notification</description>
+        <description/>
         <digest_from/>
         <digest_html/>
         <digest_reply_to/>
@@ -37,39 +44,40 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Created: ${sys_created_on}<br />A new car is created</p>]]></message_html>
+        <message_html><![CDATA[<p><strong>${mail_script:add_newusers_to_cc}</strong></p>
+<p>Details of the Car you've reserved have been updated</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Car Record Added Notify</name>
+        <name>Car record notify client update</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
         <recipient_fields/>
-        <recipient_groups name="Car Rental Reservation Receptionists">dd3cd3159712c110002ffef3a253af56</recipient_groups>
+        <recipient_groups name="Car Rental Reservation Users">89b59bd997de8110002ffef3a253affe</recipient_groups>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Car Rental Reservation</subject>
+        <subject>Car Record Detail updated</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>nieltabar</sys_created_by>
-        <sys_created_on>2022-03-10 06:53:10</sys_created_on>
+        <sys_created_on>2022-03-17 02:26:00</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>a4ade38797ca0110002ffef3a253af20</sys_id>
-        <sys_mod_count>13</sys_mod_count>
-        <sys_name>Car Record Added Notify</sys_name>
+        <sys_id>b5a23291975e8110002ffef3a253afd5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Car record notify client update</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
-        <sys_update_name>sysevent_email_action_a4ade38797ca0110002ffef3a253af20</sys_update_name>
+        <sys_update_name>sysevent_email_action_b5a23291975e8110002ffef3a253afd5</sys_update_name>
         <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-03-17 05:30:39</sys_updated_on>
+        <sys_updated_on>2022-03-17 05:16:31</sys_updated_on>
         <sys_version>2</sys_version>
-        <template display_value="Employee notification template">1462e7ca918a3010f877b1d70a4d6a3d</template>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
         <weight>0</weight>
     </sysevent_email_action>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Car Records" max_length="40" name="x_616811_car_renta_car_records" sizeclass="2" type="collection">
+    <element label="Car Records" max_length="40" name="x_616811_car_renta_car_records" sizeclass="3" type="collection">
         <element label="Add-ons" max_length="4000" name="add_ons" type="glide_list"/>
         <element label="Description" max_length="40" name="description" type="string"/>
         <element label="Insurance" max_length="40" name="insurance" type="boolean"/>
