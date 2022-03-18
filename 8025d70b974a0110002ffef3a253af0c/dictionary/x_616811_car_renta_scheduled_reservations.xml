@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Car Reservation" max_length="40" name="x_616811_car_renta_scheduled_reservations" sizeclass="2" type="collection">
+    <element label="Car Reservation" max_length="40" name="x_616811_car_renta_scheduled_reservations" sizeclass="13" type="collection">
         <element label="Applicant" mandatory="true" max_length="40" name="applicant" type="string"/>
         <element label="Car" mandatory="true" max_length="40" name="car" reference="x_616811_car_renta_car_records" type="reference"/>
         <element label="Email" mandatory="true" max_length="100" name="email" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Remarks" max_length="40" name="remarks" type="string"/>
+        <element label="Remarks" max_length="100" name="remarks" type="string"/>
         <element label="Rental Duration" mandatory="true" max_length="40" name="rental_duration" type="glide_duration"/>
+        <element attributes="edge_encryption_enabled=true" label="Calendar Date/Time" max_length="40" name="u_calendar_date_time_1" type="calendar_date_time"/>
     </element>
 </database>
