@@ -19,14 +19,14 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles/>
+        <roles>x_616811_car_renta.admin</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>maryanne.labasan</sys_created_by>
         <sys_created_on>2022-03-11 06:13:27</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b5de28e397428110002ffef3a253af76</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Available</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sys_app_module_b5de28e397428110002ffef3a253af76</sys_update_name>
         <sys_updated_by>maryanne.labasan</sys_updated_by>
-        <sys_updated_on>2022-03-17 02:07:30</sys_updated_on>
+        <sys_updated_on>2022-03-21 02:21:15</sys_updated_on>
         <timeline_page/>
         <title>Available</title>
         <uncancelable>false</uncancelable>

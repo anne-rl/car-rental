@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_616811_car_renta.holidays_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>holidays_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-16 05:18:21</sys_created_on>
+        <sys_id>58821e8d975a4110002ffef3a253af58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_616811_car_renta.holidays_user</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_user_role_58821e8d975a4110002ffef3a253af58</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-16 05:18:21</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sys_user_role_58821e8d975a4110002ffef3a253af58</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_616811_car_renta.holidays_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>holidays_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>maryanne.labasan</sys_created_by><sys_created_on>2022-03-16 05:18:21</sys_created_on><sys_id>58821e8d975a4110002ffef3a253af58</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_616811_car_renta.holidays_user</sys_name><sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package><sys_policy/><sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope><sys_update_name>sys_user_role_58821e8d975a4110002ffef3a253af58</sys_update_name><sys_updated_by>maryanne.labasan</sys_updated_by><sys_updated_on>2022-03-16 05:18:21</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-2129972868</payload_hash>
+        <record_name>x_616811_car_renta.holidays_user</record_name>
+        <reverted_from/>
+        <source>242efc2b97828110002ffef3a253af0d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-16 05:18:21</sys_created_on>
+        <sys_id>94821e8d975a4110002ffef3a253af5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f9129aaf80000001</sys_recorded_at>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-16 05:18:21</sys_updated_on>
+        <type>Role</type>
+        <update_guid>dc821e8d075a411034e38ac1644cfa5b</update_guid>
+        <update_guid_history>dc821e8d075a411034e38ac1644cfa5b:-2129972868</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_616811_car_renta.holidays_user">293f476697520110002ffef3a253af1b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-21 01:34:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>2551d0c5c23447ef9700cc97915d6bf9</sys_id>
+        <sys_metadata>58821e8d975a4110002ffef3a253af58</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_616811_car_renta.holidays_user</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sys_user_role_58821e8d975a4110002ffef3a253af58</sys_update_name>
+        <sys_update_version display_value="sys_user_role_58821e8d975a4110002ffef3a253af58">94821e8d975a4110002ffef3a253af5c</sys_update_version>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-21 01:34:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

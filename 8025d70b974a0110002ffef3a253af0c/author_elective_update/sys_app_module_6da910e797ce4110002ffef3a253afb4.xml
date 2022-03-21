@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Car Rental Reservation">041ddb03978a0110002ffef3a253af5f</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint>This menu is for the administators to manage clients and calendar days</hint>
+        <homepage/>
+        <image/>
+        <link_type>SEPARATOR</link_type>
+        <map_page/>
+        <mobile_title>Clients</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>220</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_616811_car_renta.admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-11 04:39:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6da910e797ce4110002ffef3a253afb4</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Management</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_app_module_6da910e797ce4110002ffef3a253afb4</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-16 05:31:51</sys_updated_on>
+        <timeline_page/>
+        <title>Management</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sys_app_module_6da910e797ce4110002ffef3a253afb4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Car Rental Reservation">041ddb03978a0110002ffef3a253af5f</application><assessment/><device_type/><filter/><hint>This menu is for the administators to manage clients and calendar days</hint><homepage/><image/><link_type>SEPARATOR</link_type><map_page/><mobile_title>Clients</mobile_title><mobile_view_name>Mobile</mobile_view_name><name/><order>220</order><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_616811_car_renta.admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>maryanne.labasan</sys_created_by><sys_created_on>2022-03-11 04:39:59</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6da910e797ce4110002ffef3a253afb4</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Management</sys_name><sys_overrides/><sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package><sys_policy/><sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope><sys_update_name>sys_app_module_6da910e797ce4110002ffef3a253afb4</sys_update_name><sys_updated_by>maryanne.labasan</sys_updated_by><sys_updated_on>2022-03-16 05:31:51</sys_updated_on><timeline_page/><title>Management</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1436719523</payload_hash>
+        <record_name>Management</record_name>
+        <reverted_from/>
+        <source>242efc2b97828110002ffef3a253af0d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-16 05:31:51</sys_created_on>
+        <sys_id>4295d6c1979a4110002ffef3a253af67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f913606070000001</sys_recorded_at>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-16 05:31:51</sys_updated_on>
+        <type>Module</type>
+        <update_guid>8a95d6c1ff9a4110e3f0cc8715576766</update_guid>
+        <update_guid_history>8a95d6c1ff9a4110e3f0cc8715576766:1436719523,2246a0f061920110a1ce9a80397b0425:2069612627,ce661f9025920110f8239febb2a1c427:-785719445,2de18f98d11201100276945c2eccdb38:1879725053,51310798e0120110bc8b3e8957f12daf:677588062,c15c18ab0cce4110b499f09a45dc4f83:1366144385,1b4adce782ce41102b0ea683bf7bb827:-255422687,a5c910e70dce4110b337eb96dbd8c6fb:891065571</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Management">3e8c17a697920110002ffef3a253afb7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-21 02:32:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>2ec6ccf571f34c4aad53f6fb1d2ede84</sys_id>
+        <sys_metadata>6da910e797ce4110002ffef3a253afb4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Management</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sys_app_module_6da910e797ce4110002ffef3a253afb4</sys_update_name>
+        <sys_update_version display_value="sys_app_module_6da910e797ce4110002ffef3a253afb4">4295d6c1979a4110002ffef3a253af67</sys_update_version>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-21 02:32:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

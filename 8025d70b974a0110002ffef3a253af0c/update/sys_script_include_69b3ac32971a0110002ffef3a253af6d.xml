@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_616811_car_renta.CarRentalUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Utils Script Include for the Car Rental Reservation Application&#13;
+</description>
+        <name>CarRentalUtils</name>
+        <script><![CDATA[var CarRentalUtils = Class.create();
+CarRentalUtils.prototype = {
+    initialize: function() {
+    },
+	
+	isDatePast: function(strDate){
+    // Create GlideDateTime objects for the current date and the passed in date
+    var rightnow = new GlideDateTime();
+    var testdate = new GlideDateTime(strDate);
+    
+    // If the testdate is before rightnow, return true, else return false
+    if (testdate.before(rightnow)) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  },
+	
+    type: 'CarRentalUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-21 07:49:02</sys_created_on>
+        <sys_id>69b3ac32971a0110002ffef3a253af6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CarRentalUtils</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_script_include_69b3ac32971a0110002ffef3a253af6d</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-21 07:49:02</sys_updated_on>
+    </sys_script_include>
+</record_update>

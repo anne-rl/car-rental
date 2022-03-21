@@ -140,6 +140,34 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>start_datetime</element>
+            <position>10</position>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-21 05:13:06</sys_created_on>
+            <sys_id>8c41c43697560110002ffef3a253afd6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_616811_car_renta_car_records" sys_domain="global" view="Default view">2612c053974e0110002ffef3a253af2a</sys_ui_section>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-21 05:13:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>end_datetime</element>
+            <position>11</position>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-21 05:13:06</sys_created_on>
+            <sys_id>0441483697560110002ffef3a253af3b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_616811_car_renta_car_records" sys_domain="global" view="Default view">2612c053974e0110002ffef3a253af2a</sys_ui_section>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-21 05:13:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="business_calendar">
+    <business_calendar action="INSERT_OR_UPDATE">
+        <calendar_name>Car Rental Business Calendar</calendar_name>
+        <description/>
+        <is_legacy_schedule>false</is_legacy_schedule>
+        <label>CarRentalDay</label>
+        <parent display_value="Year">017d95a353f3001076bcddeeff7b121a</parent>
+        <plural_label>rentaldays</plural_label>
+        <sys_class_name>business_calendar</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-21 03:11:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e8c4e36297d20110002ffef3a253af45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CarRentalDay</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>business_calendar_e8c4e36297d20110002ffef3a253af45</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-21 03:11:09</sys_updated_on>
+        <time_zone/>
+    </business_calendar>
+</record_update>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Datetime validation for meetings</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	//Type appropriate comment here, and begin script below
+	var today = new Date();
+	var startDateTime = new Date(g_form.getValue('start_datetime'));
+	var endDateTime = new Date(g_form.getValue('end_datetime'));
+
+	var difference = Math.abs((startDateTime.getTime() - endDateTime.getTime()) / 3600000);
+
+	var startDateFormatted = startDateTime.getDate() + "/" + (startDateTime.getMonth() + 1) + "/" + startDateTime.getFullYear();
+	var todayFormatted = today.getDate() + "/" + (today.getMonth() + 1) + "/" + today.getFullYear();
+
+
+	if (endDateTime.getTime() < startDateTime.getTime()) {
+		g_form.showErrorBox('end_datetime', 'End Datetime should not be earlier than Start Datetime', false);
+		return false;
+	}
+
+	if (g_form.isNewRecord() && (startDateTime.getTime() < today.getTime())) {
+		g_form.showErrorBox('datetime', 'Start Datetime should not be in the past', false);
+		return false;
+	}
+	
+	return true;
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-21 05:49:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e5b8c8be97560110002ffef3a253aff4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Datetime validation for meetings</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_script_client_e5b8c8be97560110002ffef3a253aff4</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-21 05:49:35</sys_updated_on>
+        <table>x_616811_car_renta_meeting</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sys_script_client_e5b8c8be97560110002ffef3a253aff4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Datetime validation for meetings&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+	//Type appropriate comment here, and begin script below
+	var today = new Date();
+	var startDateTime = new Date(g_form.getValue('start_datetime'));
+	var endDateTime = new Date(g_form.getValue('end_datetime'));
+
+	var difference = Math.abs((startDateTime.getTime() - endDateTime.getTime()) / 3600000);
+
+	var startDateFormatted = startDateTime.getDate() + "/" + (startDateTime.getMonth() + 1) + "/" + startDateTime.getFullYear();
+	var todayFormatted = today.getDate() + "/" + (today.getMonth() + 1) + "/" + today.getFullYear();
+
+
+	if (endDateTime.getTime() &lt; startDateTime.getTime()) {
+		g_form.showErrorBox('end_datetime', 'End Datetime should not be earlier than Start Datetime', false);
+		return false;
+	}
+
+	if (g_form.isNewRecord() &amp;&amp; (startDateTime.getTime() &lt; today.getTime())) {
+		g_form.showErrorBox('datetime', 'Start Datetime should not be in the past', false);
+		return false;
+	}
+	
+	return true;
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;maryanne.labasan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-21 05:49:35&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;e5b8c8be97560110002ffef3a253aff4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Datetime validation for meetings&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Car Rental Reservation" source="x_616811_car_renta"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Car Rental Reservation"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_e5b8c8be97560110002ffef3a253aff4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;maryanne.labasan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-21 05:49:35&lt;/sys_updated_on&gt;&lt;table&gt;x_616811_car_renta_meeting&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1822093500</payload_hash>
+        <record_name>Datetime validation for meetings</record_name>
+        <reverted_from/>
+        <source>bc980b2e97120110002ffef3a253af76</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-21 05:49:35</sys_created_on>
+        <sys_id>2e99043297960110002ffef3a253afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fab0610230000001</sys_recorded_at>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-21 05:49:35</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>6699043261960110f729b95fdccca8cc</update_guid>
+        <update_guid_history>6699043261960110f729b95fdccca8cc:1822093500</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-21 07:03:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>39ca231071d24858903558411f7b8640</sys_id>
+        <sys_metadata>e5b8c8be97560110002ffef3a253aff4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Datetime validation for meetings</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent display_value="Meeting">7f132ce397028110002ffef3a253af99</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sys_script_client_e5b8c8be97560110002ffef3a253aff4</sys_update_name>
+        <sys_update_version display_value="sys_script_client_e5b8c8be97560110002ffef3a253aff4">2e99043297960110002ffef3a253afcc</sys_update_version>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-21 07:03:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
