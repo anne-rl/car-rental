@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <application display_value="Car Rental Reservation">041ddb03978a0110002ffef3a253af5f</application>
         <assessment/>
         <device_type/>
@@ -13,7 +13,7 @@
         <mobile_title>Calendar Days</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name/>
-        <order>2</order>
+        <order/>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ee1c976697920110002ffef3a253af7a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Calendar Days</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sys_app_module_ee1c976697920110002ffef3a253af7a</sys_update_name>
         <sys_updated_by>maryanne.labasan</sys_updated_by>
-        <sys_updated_on>2022-03-21 02:37:02</sys_updated_on>
+        <sys_updated_on>2022-03-23 02:30:49</sys_updated_on>
         <timeline_page/>
         <title>Calendar Days</title>
         <uncancelable>false</uncancelable>

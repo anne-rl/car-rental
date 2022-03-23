@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color>#000814</background_color>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Available Cars - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="available_cars">ddbaae5797d2c110002ffef3a253afa4</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-23 06:50:45</sys_created_on>
+        <sys_id>bdca629797d2c110002ffef3a253afbc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Available Cars - Container 1</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sp_container_bdca629797d2c110002ffef3a253afbc</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-23 07:06:40</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sp_container_bdca629797d2c110002ffef3a253afbc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color>#000814</background_color><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Available Cars - Container 1</name><order>1</order><sp_page display_value="available_cars">ddbaae5797d2c110002ffef3a253afa4</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>maryanne.labasan</sys_created_by><sys_created_on>2022-03-23 06:50:45</sys_created_on><sys_id>bdca629797d2c110002ffef3a253afbc</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Available Cars - Container 1</sys_name><sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package><sys_policy/><sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope><sys_update_name>sp_container_bdca629797d2c110002ffef3a253afbc</sys_update_name><sys_updated_by>maryanne.labasan</sys_updated_by><sys_updated_on>2022-03-23 07:06:40</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>-1809974003</payload_hash>
+        <record_name>Available Cars - Container 1</record_name>
+        <reverted_from/>
+        <source>bc980b2e97120110002ffef3a253af76</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-23 07:06:40</sys_created_on>
+        <sys_id>4b6e66db97d2c110002ffef3a253af4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fb59958d90000001</sys_recorded_at>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-23 07:06:40</sys_updated_on>
+        <type>Container</type>
+        <update_guid>436e66db8bd2c110375e4e6081cdb34b</update_guid>
+        <update_guid_history>436e66db8bd2c110375e4e6081cdb34b:-1809974003,ad6e26db50d2c11056ffc2830097bbcb:439907688,6c8c2a1b3cd2c11025af2aed5aac2c68:164827294,1c8c261b80d2c1103ed633e9e328387f:-744555863,f1ca6297e1d2c11006a06a4faa27b2be:2053914393</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Available Cars - Container 1">d560fa9f97d2c110002ffef3a253afc2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-23 07:15:17</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>a1bee66e265f49d2b9b7636316a62539</sys_id>
+        <sys_metadata>bdca629797d2c110002ffef3a253afbc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Available Cars - Container 1</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sp_container_bdca629797d2c110002ffef3a253afbc</sys_update_name>
+        <sys_update_version display_value="sp_container_bdca629797d2c110002ffef3a253afbc">4b6e66db97d2c110002ffef3a253af4b</sys_update_version>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-23 07:15:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

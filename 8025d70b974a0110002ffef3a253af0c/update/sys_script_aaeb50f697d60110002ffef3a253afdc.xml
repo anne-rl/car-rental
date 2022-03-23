@@ -28,15 +28,13 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-
-	// Add your code here
+	
 	// rightnow stores the current time
     var rightnow = new GlideDateTime();
     // Create a GlideDateTime object for the Start Datetime
     var startRental = new GlideDateTime(current.start_datetime);
   
-  // If the start_datetime is before rightnow, do not write the record to the database
-  // Output an error message to the screen
+  // If the start_datetime is before rightnow, do not write the record to the database, output an error message
   if(startRental.before(rightnow)){
     gs.addErrorMessage("Start Datetime cannot be in the past.  Your record has not been saved to the database.");
     current.setAbortAction(true);
@@ -49,7 +47,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>aaeb50f697d60110002ffef3a253afdc</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Datetime Validation for Car Reservations</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
@@ -57,7 +55,7 @@
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sys_script_aaeb50f697d60110002ffef3a253afdc</sys_update_name>
         <sys_updated_by>maryanne.labasan</sys_updated_by>
-        <sys_updated_on>2022-03-21 07:12:09</sys_updated_on>
+        <sys_updated_on>2022-03-23 01:48:43</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
