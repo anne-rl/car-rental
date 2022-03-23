@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Complaints" max_length="40" name="x_616811_car_renta_complaints" sizeclass="4" type="collection">
+        <element label="Applicant Name" mandatory="true" max_length="32" name="applicant_name" reference="sys_user" type="reference"/>
+        <element label="Car" mandatory="true" max_length="32" name="car" reference="x_616811_car_renta_car_records" type="reference"/>
+        <element label="Date Used" mandatory="true" max_length="40" name="date_used" type="glide_date_time"/>
+        <element label="Details" max_length="500" name="details" type="string"/>
+        <element choice="3" default="engine problem" label="Issue" mandatory="true" max_length="40" name="issue" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Engine Problem" sequence="0" value="engine problem"/>
+                <element inactive_on_update="false" label="Battery Problem" sequence="1" value="battery problem"/>
+                <element inactive_on_update="false" label="Needs Cleanup" sequence="2" value="needs cleanup"/>
+                <element inactive_on_update="false" label="Other" sequence="3" value="other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Other" mandatory="true" max_length="40" name="other" type="string"/>
+        <index name="index">
+            <element name="car"/>
+        </index>
+        <index name="index2">
+            <element name="applicant_name"/>
+        </index>
+    </element>
+</database>

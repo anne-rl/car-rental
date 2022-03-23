@@ -16,5 +16,45 @@
             <sys_updated_by>maryanne.labasan</sys_updated_by>
             <sys_updated_on>2022-03-15 02:49:17</sys_updated_on>
         </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Holiday</label>
+            <language>en</language>
+            <name>x_616811_car_renta_calendar_days</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-23 09:51:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c024579f9796c110002ffef3a253af6d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-23 09:51:23</sys_updated_on>
+            <value>holiday</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Business Day</label>
+            <language>en</language>
+            <name>x_616811_car_renta_calendar_days</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-23 09:51:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4824579f9796c110002ffef3a253af6e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-23 09:51:23</sys_updated_on>
+            <value>business day</value>
+        </sys_choice>
     </sys_choice>
 </record_update>

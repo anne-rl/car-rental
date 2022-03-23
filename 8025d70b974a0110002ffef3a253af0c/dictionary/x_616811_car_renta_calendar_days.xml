@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Calendar Days" max_length="40" name="x_616811_car_renta_calendar_days" sizeclass="0" type="collection">
+        <element label="End Datetime" max_length="40" name="end_datetime" type="glide_date_time"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Start Datetime" max_length="40" name="start_datetime" type="glide_date_time"/>
+        <element choice="3" default="holiday" label="Type" mandatory="true" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Holiday" sequence="0" value="holiday"/>
+                <element inactive_on_update="false" label="Business Day" sequence="1" value="business day"/>
+            </choice>
+        </element>
+    </element>
+</database>
