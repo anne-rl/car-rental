@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Complaints" max_length="40" name="x_616811_car_renta_complaints" sizeclass="4" type="collection">
+    <element label="Complaints" max_length="40" name="x_616811_car_renta_complaints" sizeclass="6" type="collection">
         <element label="Applicant Name" mandatory="true" max_length="32" name="applicant_name" reference="sys_user" type="reference"/>
-        <element label="Car" mandatory="true" max_length="32" name="car" reference="x_616811_car_renta_car_records" type="reference"/>
-        <element label="Date Used" mandatory="true" max_length="40" name="date_used" type="glide_date_time"/>
+        <element label="Car" mandatory="true" max_length="32" name="car" read_only="true" reference="x_616811_car_renta_car_records" type="reference"/>
+        <element label="Date Used" mandatory="true" max_length="40" name="date_used" read_only="true" type="glide_date_time"/>
         <element label="Details" max_length="500" name="details" type="string"/>
         <element choice="3" default="engine problem" label="Issue" mandatory="true" max_length="40" name="issue" type="choice">
             <choice>
@@ -13,10 +13,14 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Other" mandatory="true" max_length="40" name="other" type="string"/>
+        <element label="Reservation" mandatory="true" max_length="32" name="reservation" reference="x_616811_car_renta_scheduled_reservations" type="reference"/>
         <index name="index">
             <element name="car"/>
         </index>
         <index name="index2">
+            <element name="reservation"/>
+        </index>
+        <index name="index3">
             <element name="applicant_name"/>
         </index>
     </element>

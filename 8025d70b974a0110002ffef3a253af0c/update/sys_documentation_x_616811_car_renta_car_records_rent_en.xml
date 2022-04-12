@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="rent" label="Rent" language="en" table="x_616811_car_renta_car_records">
+    <sys_documentation element="rent" label="Rent Per Day" language="en" table="x_616811_car_renta_car_records">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>rent</element>
             <help/>
             <hint/>
-            <label>Rent</label>
+            <label>Rent Per Day</label>
             <language>en</language>
             <name>x_616811_car_renta_car_records</name>
-            <plural>Rents</plural>
+            <plural>Rent Per Days</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>maryanne.labasan</sys_created_by>
             <sys_created_on>2022-03-10 08:14:51</sys_created_on>
             <sys_id>0751c413974e0110002ffef3a253afbe</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Rent</sys_name>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Rent Per Day</sys_name>
             <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
             <sys_policy/>
             <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
             <sys_update_name>sys_documentation_x_616811_car_renta_car_records_rent_en</sys_update_name>
             <sys_updated_by>maryanne.labasan</sys_updated_by>
-            <sys_updated_on>2022-03-10 08:14:51</sys_updated_on>
+            <sys_updated_on>2022-04-05 08:56:23</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

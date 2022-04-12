@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>test_importCars_staging</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_616811_car_renta_test_importcars_staging</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>bette.barcelona</sys_created_by>
+        <sys_created_on>2022-04-06 03:06:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5ebd31b3972a4110002ffef3a253aff6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test_importCars_staging</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_app_module_5ebd31b3972a4110002ffef3a253aff6</sys_update_name>
+        <sys_updated_by>bette.barcelona</sys_updated_by>
+        <sys_updated_on>2022-04-06 03:06:33</sys_updated_on>
+        <timeline_page/>
+        <title>test_importCars_staging</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sys_app_module_5ebd31b3972a4110002ffef3a253aff6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Import Sets">import_sets</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>test_importCars_staging</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_616811_car_renta_test_importcars_staging</name><order>1100</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>bette.barcelona</sys_created_by><sys_created_on>2022-04-06 03:06:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5ebd31b3972a4110002ffef3a253aff6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>test_importCars_staging</sys_name><sys_overrides/><sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package><sys_policy/><sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope><sys_update_name>sys_app_module_5ebd31b3972a4110002ffef3a253aff6</sys_update_name><sys_updated_by>bette.barcelona</sys_updated_by><sys_updated_on>2022-04-06 03:06:33</sys_updated_on><timeline_page/><title>test_importCars_staging</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>892401984</payload_hash>
+        <record_name>test_importCars_staging</record_name>
+        <reverted_from/>
+        <source>debd31b3972a4110002ffef3a253afdd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bette.barcelona</sys_created_by>
+        <sys_created_on>2022-04-06 03:06:33</sys_created_on>
+        <sys_id>dabd71b3972a4110002ffef3a253af11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ffcd68e3b0000001</sys_recorded_at>
+        <sys_updated_by>bette.barcelona</sys_updated_by>
+        <sys_updated_on>2022-04-06 03:06:33</sys_updated_on>
+        <type>Module</type>
+        <update_guid>16bd71b30b2a4110ad90dad9f7879711</update_guid>
+        <update_guid_history>16bd71b30b2a4110ad90dad9f7879711:892401984</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="test_importCars_staging">76b01a7b976a4110002ffef3a253af91</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-04-06 04:29:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>1790e8cac2804ef3aca61a48898bbe71</sys_id>
+        <sys_metadata>5ebd31b3972a4110002ffef3a253aff6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test_importCars_staging</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sys_app_module_5ebd31b3972a4110002ffef3a253aff6</sys_update_name>
+        <sys_update_version display_value="sys_app_module_5ebd31b3972a4110002ffef3a253aff6">dabd71b3972a4110002ffef3a253af11</sys_update_version>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-04-06 04:29:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Car Rental Reservation">041ddb03978a0110002ffef3a253af5f</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>SEPARATOR</link_type>
+        <map_page/>
+        <mobile_title>Meeting Room</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>70</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_616811_car_renta.admin,x_616811_car_renta.receptionist</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-11 04:55:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>465dd8eb97ce4110002ffef3a253af24</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Meeting Room</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_app_module_465dd8eb97ce4110002ffef3a253af24</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-14 01:04:53</sys_updated_on>
+        <timeline_page/>
+        <title>Meeting Room</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sys_app_module_465dd8eb97ce4110002ffef3a253af24</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Car Rental Reservation">041ddb03978a0110002ffef3a253af5f</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>SEPARATOR</link_type><map_page/><mobile_title>Meeting Room</mobile_title><mobile_view_name>Mobile</mobile_view_name><name/><order>70</order><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_616811_car_renta.admin,x_616811_car_renta.receptionist</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>maryanne.labasan</sys_created_by><sys_created_on>2022-03-11 04:55:55</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>465dd8eb97ce4110002ffef3a253af24</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Meeting Room</sys_name><sys_overrides/><sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package><sys_policy/><sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope><sys_update_name>sys_app_module_465dd8eb97ce4110002ffef3a253af24</sys_update_name><sys_updated_by>maryanne.labasan</sys_updated_by><sys_updated_on>2022-03-14 01:04:53</sys_updated_on><timeline_page/><title>Meeting Room</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>410026521</payload_hash>
+        <record_name>Meeting Room</record_name>
+        <reverted_from/>
+        <source>242efc2b97828110002ffef3a253af0d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-14 01:04:53</sys_created_on>
+        <sys_id>3345c7dc97120110002ffef3a253afe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f85f4e4be0000001</sys_recorded_at>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-14 01:04:53</sys_updated_on>
+        <type>Module</type>
+        <update_guid>7b45c7dc711201105f00ed389e457ee6</update_guid>
+        <update_guid_history>7b45c7dc711201105f00ed389e457ee6:410026521,bbb03c6788428110ca75c6c2494c5a3c:849217762,2248e4eb2b028110f2f09da1bee6aaaf:-1201039903,b26dd02f9dce411005bccb77a4af7390:-27354459</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Meeting Room">d322b7a7975a0510002ffef3a253af0b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-24 06:41:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>6346d82ad1194b8dad2d1bd50707e3d1</sys_id>
+        <sys_metadata>465dd8eb97ce4110002ffef3a253af24</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Meeting Room</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sys_app_module_465dd8eb97ce4110002ffef3a253af24</sys_update_name>
+        <sys_update_version display_value="sys_app_module_465dd8eb97ce4110002ffef3a253af24">3345c7dc97120110002ffef3a253afe7</sys_update_version>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-24 06:41:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

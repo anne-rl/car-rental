@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Car Rental Reservation">041ddb03978a0110002ffef3a253af5f</application>
+        <assessment/>
+        <device_type/>
+        <filter table="x_616811_car_renta_meeting">start_datetimeONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^EQ<item endquery="false" field="start_datetime" goto="false" newquery="false" operator="ON" or="false" value="Today@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Daily</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_616811_car_renta_meeting</name>
+        <order>150</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_616811_car_renta.admin,x_616811_car_renta.receptionist</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-14 00:39:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fe3f721897120110002ffef3a253af0c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Today</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_app_module_fe3f721897120110002ffef3a253af0c</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-23 02:10:23</sys_updated_on>
+        <timeline_page/>
+        <title>Today</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sys_app_module_fe3f721897120110002ffef3a253af0c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Car Rental Reservation">041ddb03978a0110002ffef3a253af5f</application><assessment/><device_type/><filter table="x_616811_car_renta_meeting">start_datetimeONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^EQ<item endquery="false" field="start_datetime" goto="false" newquery="false" operator="ON" or="false" value="Today@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Daily</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_616811_car_renta_meeting</name><order>150</order><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_616811_car_renta.admin,x_616811_car_renta.receptionist</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>maryanne.labasan</sys_created_by><sys_created_on>2022-03-14 00:39:41</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fe3f721897120110002ffef3a253af0c</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Today</sys_name><sys_overrides/><sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package><sys_policy/><sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope><sys_update_name>sys_app_module_fe3f721897120110002ffef3a253af0c</sys_update_name><sys_updated_by>maryanne.labasan</sys_updated_by><sys_updated_on>2022-03-23 02:10:23</sys_updated_on><timeline_page/><title>Today</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-640541668</payload_hash>
+        <record_name>Today</record_name>
+        <reverted_from/>
+        <source>bc980b2e97120110002ffef3a253af76</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-23 02:10:23</sys_created_on>
+        <sys_id>c79aa193979e8110002ffef3a253af37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fb48a18880000001</sys_recorded_at>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-23 02:10:23</sys_updated_on>
+        <type>Module</type>
+        <update_guid>039aa193739e811054d9df9a4cacf937</update_guid>
+        <update_guid_history>039aa193739e811054d9df9a4cacf937:-640541668,03a454be44960110b69c10dc312ef070:-813720836,b019df54da9201108e25029fa62de789:305311298,8092031c37120110df147c6d263302f5:1953263445,9d218798e81201100c12dea824fdd3d7:-691403034,6e8ffa18eb120110ff30e43ac656dc32:1533406824</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Today">9d627fa7975a0510002ffef3a253afcb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-24 06:42:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>5c4604d7bd2244548cd389ca0c054701</sys_id>
+        <sys_metadata>fe3f721897120110002ffef3a253af0c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Today</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sys_app_module_fe3f721897120110002ffef3a253af0c</sys_update_name>
+        <sys_update_version display_value="sys_app_module_fe3f721897120110002ffef3a253af0c">c79aa193979e8110002ffef3a253af37</sys_update_version>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-24 06:42:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

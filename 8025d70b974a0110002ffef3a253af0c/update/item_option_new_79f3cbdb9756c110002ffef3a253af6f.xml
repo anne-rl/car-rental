@@ -35,7 +35,7 @@
         <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
@@ -45,7 +45,7 @@
         <pricing_implications>false</pricing_implications>
         <published_ref/>
         <question_text>Applicant Name</question_text>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <read_script/>
         <rec_lookup_price/>
@@ -68,14 +68,14 @@
         <sys_created_by>nieltabar</sys_created_by>
         <sys_created_on>2022-03-23 08:42:27</sys_created_on>
         <sys_id>79f3cbdb9756c110002ffef3a253af6f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Applicant Name</sys_name>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>item_option_new_79f3cbdb9756c110002ffef3a253af6f</sys_update_name>
         <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-03-23 08:43:50</sys_updated_on>
+        <sys_updated_on>2022-04-01 07:22:05</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>

@@ -6,7 +6,7 @@
         <css/>
         <glyph/>
         <id/>
-        <order>1</order>
+        <order>2</order>
         <roles/>
         <short_description/>
         <size>md</size>
@@ -16,20 +16,20 @@
         <sys_created_by>maryanne.labasan</sys_created_by>
         <sys_created_on>2022-03-23 07:06:28</sys_created_on>
         <sys_id>486e26db97d2c110002ffef3a253af13</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sp_instance_486e26db97d2c110002ffef3a253af13</sys_update_name>
         <sys_updated_by>maryanne.labasan</sys_updated_by>
-        <sys_updated_on>2022-03-23 07:16:28</sys_updated_on>
+        <sys_updated_on>2022-04-04 08:31:16</sys_updated_on>
         <title/>
         <url/>
         <widget_parameters><![CDATA[{
 	"html": {
-		"value": "<h1 style=\"text-align: center; color: #caf0f8; font-size: 300%;\" data-mce-style=\"text-align: center; color: #caf0f8; font-size: 300%;\"><strong>&nbsp;</strong></h1><h1 style=\"text-align: center; color: #caf0f8; font-size: 300%;\" data-mce-style=\"text-align: center; color: #caf0f8; font-size: 300%;\"><strong>LIST OF&nbsp;AVAILABLE CARS</strong></h1>",
-		"displayValue": "<h1 style=\"text-align: center; color: #caf0f8; font-size: 300%;\"><strong>&nbsp;</strong></h1>\n<h1 style=\"text-align: center; color: #caf0f8; font-size: 300%;\"><strong>LIST OF&nbsp;AVAILABLE CARS</strong></h1>"
+		"value": "<h1 style=\"text-align: center; color: #283845; font-size: 300%;\" data-mce-style=\"text-align: center; color: #283845; font-size: 300%;\"><strong>&nbsp;</strong></h1><h1 style=\"text-align: center; color: #283845; font-size: 300%;\" data-mce-style=\"text-align: center; color: #283845; font-size: 300%;\"><strong>LIST OF&nbsp;AVAILABLE CARS</strong></h1>",
+		"displayValue": "<h1 style=\"text-align: center; color: #283845; font-size: 300%;\"><strong>&nbsp;</strong></h1>\n<h1 style=\"text-align: center; color: #283845; font-size: 300%;\"><strong>LIST OF&nbsp;AVAILABLE CARS</strong></h1>"
 	}
 }]]></widget_parameters>
     </sp_instance>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Car Details Data" max_length="40" name="x_616811_car_renta_car_details_data" sizeclass="3" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Add-ons" label="Add-ons" max_length="40" name="u_add_ons" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Available" label="Available" max_length="40" name="u_available" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Car Image" label="Car Image" max_length="40" name="u_car_image" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Description" label="Description" max_length="40" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Insurance" label="Insurance" max_length="40" name="u_insurance" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="import_attribute_name=Rent Per Day" label="Rent Per Day" max_length="40" name="u_rent_per_day" type="integer"/>
+        <element attributes="import_attribute_name=Seating Capacity" label="Seating Capacity" max_length="40" name="u_seating_capacity" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Type" label="Type" max_length="40" name="u_type" type="string"/>
+    </element>
+</database>

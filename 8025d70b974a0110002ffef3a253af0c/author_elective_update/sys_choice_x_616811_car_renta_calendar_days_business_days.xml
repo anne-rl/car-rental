@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="business_days" table="x_616811_car_renta_calendar_days" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>business_days</element>
+            <name>x_616811_car_renta_calendar_days</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-29 08:29:44</sys_created_on>
+            <sys_id>e6faf115972a0110002ffef3a253afa9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>business_days</sys_name>
+            <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+            <sys_update_name>sys_choice_x_616811_car_renta_calendar_days_business_days</sys_update_name>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-29 08:29:44</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_days</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sunday</label>
+            <language>en</language>
+            <name>x_616811_car_renta_calendar_days</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-29 08:30:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>361bb515972a0110002ffef3a253af5e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-29 08:34:32</sys_updated_on>
+            <value>sun</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_days</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Monday</label>
+            <language>en</language>
+            <name>x_616811_car_renta_calendar_days</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-29 08:29:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5eeaf115972a0110002ffef3a253afa7</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-29 08:34:24</sys_updated_on>
+            <value>mon</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_days</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tuesday</label>
+            <language>en</language>
+            <name>x_616811_car_renta_calendar_days</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-29 08:29:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b6fa3515972a0110002ffef3a253aff0</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-29 08:34:41</sys_updated_on>
+            <value>tue</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_days</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wednesday</label>
+            <language>en</language>
+            <name>x_616811_car_renta_calendar_days</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-29 08:29:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a40b3515972a0110002ffef3a253aff9</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-29 08:34:45</sys_updated_on>
+            <value>wed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_days</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Thursday</label>
+            <language>en</language>
+            <name>x_616811_car_renta_calendar_days</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-29 08:30:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3d0b7515972a0110002ffef3a253af65</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-29 08:34:38</sys_updated_on>
+            <value>thurs</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_days</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Friday</label>
+            <language>en</language>
+            <name>x_616811_car_renta_calendar_days</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-29 08:30:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb0b7515972a0110002ffef3a253af1e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-29 08:34:20</sys_updated_on>
+            <value>fri</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_days</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Saturday</label>
+            <language>en</language>
+            <name>x_616811_car_renta_calendar_days</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-29 08:30:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f41b7515972a0110002ffef3a253af5c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-29 08:34:27</sys_updated_on>
+            <value>sat</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

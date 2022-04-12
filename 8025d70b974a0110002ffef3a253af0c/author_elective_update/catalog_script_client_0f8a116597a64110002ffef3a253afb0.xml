@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Car Rental Reservation">2627b0af97428110002ffef3a253afdf</cat_item>
+        <cat_variable>IO:2468b8ef97428110002ffef3a253afd0</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Auto Populate car image</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	var image = g_form.getReference('car', doalert);
+}
+function doAlert(image) { //reference is passed into callback as first arguments
+
+  g_form.setValue('car_image',image.car_image);
+
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>nieltabar</sys_created_by>
+        <sys_created_on>2022-03-30 00:47:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0f8a116597a64110002ffef3a253afb0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Auto Populate car image</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>catalog_script_client_0f8a116597a64110002ffef3a253afb0</sys_update_name>
+        <sys_updated_by>nieltabar</sys_updated_by>
+        <sys_updated_on>2022-03-30 01:05:34</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>catalog_script_client_0f8a116597a64110002ffef3a253afb0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;cat_item display_value="Car Rental Reservation"&gt;2627b0af97428110002ffef3a253afdf&lt;/cat_item&gt;&lt;cat_variable&gt;IO:2468b8ef97428110002ffef3a253afd0&lt;/cat_variable&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Auto Populate car image&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	var image = g_form.getReference('car', doalert);
+}
+function doAlert(image) { //reference is passed into callback as first arguments
+
+  g_form.setValue('car_image',image.car_image);
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;nieltabar&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-30 00:47:36&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0f8a116597a64110002ffef3a253afb0&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Auto Populate car image&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Car Rental Reservation" source="x_616811_car_renta"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Car Rental Reservation"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_0f8a116597a64110002ffef3a253afb0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nieltabar&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-30 01:05:34&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-241676597</payload_hash>
+        <record_name>Auto Populate car image</record_name>
+        <reverted_from/>
+        <source>15e9bf5b975ac110002ffef3a253af8c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>nieltabar</sys_created_by>
+        <sys_created_on>2022-03-30 01:05:34</sys_created_on>
+        <sys_id>caee9de997a64110002ffef3a253af5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fd85b46120000001</sys_recorded_at>
+        <sys_updated_by>nieltabar</sys_updated_by>
+        <sys_updated_on>2022-03-30 01:05:34</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>c2ee9de960a6411050bdbcc42a6a325d</update_guid>
+        <update_guid_history>c2ee9de960a6411050bdbcc42a6a325d:-241676597,7b3e99a94aa641106f67f90bfced1d83:932585049,a13dd96972a64110ba61d0d6843851dd:585865599,288cd9296ea64110089e449e1bbef79f:1686693277,608b5de521a64110aa4c62144242aa8d:960830154,baca59a526a64110c2c6e56d69364d7e:749670229</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Auto Populate car image">621fd12d97a64110002ffef3a253af9b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>nieltabar</sys_created_by>
+        <sys_created_on>2022-03-30 01:06:26</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>35fff9ce693a4dc4a97a3a178e360eb1</sys_id>
+        <sys_metadata>0f8a116597a64110002ffef3a253afb0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Auto Populate car image</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>catalog_script_client_0f8a116597a64110002ffef3a253afb0</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_0f8a116597a64110002ffef3a253afb0">caee9de997a64110002ffef3a253af5d</sys_update_version>
+        <sys_updated_by>nieltabar</sys_updated_by>
+        <sys_updated_on>2022-03-30 01:06:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

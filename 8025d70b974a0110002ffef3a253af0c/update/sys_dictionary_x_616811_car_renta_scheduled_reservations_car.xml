@@ -38,7 +38,7 @@
         <name>x_616811_car_renta_scheduled_reservations</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference display_value="" name="x_616811_car_renta_car_records">x_616811_car_renta_car_records</reference>
         <reference_cascade_rule/>
@@ -54,14 +54,14 @@
         <sys_created_by>maryanne.labasan</sys_created_by>
         <sys_created_on>2022-03-10 06:23:13</sys_created_on>
         <sys_id>6476e70f978a0110002ffef3a253af7d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Car</sys_name>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sys_dictionary_x_616811_car_renta_scheduled_reservations_car</sys_update_name>
         <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-03-11 07:31:56</sys_updated_on>
+        <sys_updated_on>2022-04-07 02:22:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

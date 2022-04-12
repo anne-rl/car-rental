@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Get Users for Applicant Name</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	
+	if (g_user.hasRole('admin') || g_user.hasRole('x_616811_car_renta.admin') ||      g_user.hasRole('x_616811_car_renta.receptionist')) return;
+	
+	if (!g_form.isNewRecord()) return;
+	
+	g_form.setValue('applicant', g_user.getFullName(), g_user.getFullName());
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-21 05:24:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1bf2c0f697560110002ffef3a253afb4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Get Users for Applicant Name</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_script_client_1bf2c0f697560110002ffef3a253afb4</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-21 05:44:03</sys_updated_on>
+        <table>x_616811_car_renta_meeting</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sys_script_client_1bf2c0f697560110002ffef3a253afb4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Get Users for Applicant Name&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+	
+	if (g_user.hasRole('admin') || g_user.hasRole('x_616811_car_renta.admin') ||      g_user.hasRole('x_616811_car_renta.receptionist')) return;
+	
+	if (!g_form.isNewRecord()) return;
+	
+	g_form.setValue('applicant', g_user.getFullName(), g_user.getFullName());
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;maryanne.labasan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-21 05:24:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;1bf2c0f697560110002ffef3a253afb4&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get Users for Applicant Name&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Car Rental Reservation" source="x_616811_car_renta"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Car Rental Reservation"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_1bf2c0f697560110002ffef3a253afb4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;maryanne.labasan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-21 05:44:03&lt;/sys_updated_on&gt;&lt;table&gt;x_616811_car_renta_meeting&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1343305332</payload_hash>
+        <record_name>Get Users for Applicant Name</record_name>
+        <reverted_from/>
+        <source>bc980b2e97120110002ffef3a253af76</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-21 05:44:03</sys_created_on>
+        <sys_id>6d5884be97560110002ffef3a253af32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fab00fe860000001</sys_recorded_at>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-21 05:44:03</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>655884be3e560110b65c538e1e43eb32</update_guid>
+        <update_guid_history>655884be3e560110b65c538e1e43eb32:1343305332,6af78c7eef56011087fd9f40bec440c1:-628168913,6c060cbae9560110a23e54f845891cd9:1532160475,faf3443abf5601103d06694a77e161ac:772975343,d7e3c03a01560110ccf169852c349787:715334448</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-24 06:42:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>b2abaa8c7f9f4ef186d62698db099ab9</sys_id>
+        <sys_metadata>1bf2c0f697560110002ffef3a253afb4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Users for Applicant Name</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent display_value="">7f132ce397028110002ffef3a253af99</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sys_script_client_1bf2c0f697560110002ffef3a253afb4</sys_update_name>
+        <sys_update_version display_value="sys_script_client_1bf2c0f697560110002ffef3a253afb4">6d5884be97560110002ffef3a253af32</sys_update_version>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-03-24 06:42:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

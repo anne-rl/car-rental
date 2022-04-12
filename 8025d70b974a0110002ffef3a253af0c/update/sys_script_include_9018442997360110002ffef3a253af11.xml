@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_616811_car_renta.ReservtionUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ReservtionUtils</name>
+        <script><![CDATA[var ReservtionUtils = Class.create();
+ReservtionUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
+
+	checkExistingReservation: function() {
+		var carId = this.getParameter('sysparm_car_id');
+		var startDateTime = this.getParameter('sysparm_start_dt');
+		var endDateTime = this.getParameter('sysparm_end_dt');
+
+		var startParsed = Date.parse(startDateTime);
+		var endParsed = Date.parse(endDateTime);
+
+		var startGDateTime = new GlideDateTime();
+		var endGDateTime = new GlideDateTime();
+
+		startGDateTime.setValue(parseInt(startParsed));
+		endGDateTime.setValue(parseInt(endParsed));
+		
+		var startTime = startGDateTime.getTime().toString().split(" ")[1];
+		var endTime = endGDateTime.getTime().toString().split(" ")[1];
+		
+		
+		
+		var RESERVATION_UNIQUE = "datetime<=javascript:gs.dateGenerate('"+startGDateTime.getDate()+"','"+startTime+"')^end_datetime>=javascript:gs.dateGenerate('"+startGDateTime.getDate()+"','"+startTime+"')^car="+carId+"^NQcar="+carId+"^datetime<=javascript:gs.dateGenerate('"+endGDateTime.getDate()+"','"+endTime+"')^end_datetime>=javascript:gs.dateGenerate('"+endGDateTime.getDate()+"','"+endTime+"')^NQcar="+carId+"^datetime>=javascript:gs.dateGenerate('"+startGDateTime.getDate()+"','"+startTime+"')^datetime<=javascript:gs.dateGenerate('"+endGDateTime.getDate()+"','"+endTime+"')^end_datetime>=javascript:gs.dateGenerate('"+startGDateTime.getDate()+"','"+startTime+"')^end_datetime<=javascript:gs.dateGenerate('"+endGDateTime.getDate()+"','"+endTime+"')";
+
+		
+		
+		
+		gs.info("query string: " + RESERVATION_UNIQUE);
+		
+		var gr = new GlideRecord('x_616811_car_renta_scheduled_reservations');
+		gr.addEncodedQuery(RESERVATION_UNIQUE);
+		
+		gr.query();
+
+		if (gr.next()) {
+			gs.info("gr:" + gr.toString);
+			return true;
+		}
+
+		return false;
+	},
+    type: 'ReservtionUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-04-11 05:09:25</sys_created_on>
+        <sys_id>9018442997360110002ffef3a253af11</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ReservtionUtils</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_script_include_9018442997360110002ffef3a253af11</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-04-11 05:09:33</sys_updated_on>
+    </sys_script_include>
+</record_update>

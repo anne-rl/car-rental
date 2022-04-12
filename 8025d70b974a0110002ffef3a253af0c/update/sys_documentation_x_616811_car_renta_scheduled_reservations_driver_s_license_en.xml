@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="driver_s_license" label="Driver's License" language="en" table="x_616811_car_renta_scheduled_reservations">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>driver_s_license</element>
+            <help/>
+            <hint/>
+            <label>Driver's License</label>
+            <language>en</language>
+            <name>x_616811_car_renta_scheduled_reservations</name>
+            <plural>Driver's Licenses</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>maryanne.labasan</sys_created_by>
+            <sys_created_on>2022-03-29 06:40:39</sys_created_on>
+            <sys_id>f802611597a60110002ffef3a253af84</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Driver's License</sys_name>
+            <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+            <sys_update_name>sys_documentation_x_616811_car_renta_scheduled_reservations_driver_s_license_en</sys_update_name>
+            <sys_updated_by>maryanne.labasan</sys_updated_by>
+            <sys_updated_on>2022-03-29 06:40:39</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

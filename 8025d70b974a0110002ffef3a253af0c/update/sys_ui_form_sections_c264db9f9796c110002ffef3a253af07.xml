@@ -17,16 +17,16 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>1</position>
             <sys_created_by>maryanne.labasan</sys_created_by>
-            <sys_created_on>2022-03-23 09:52:37</sys_created_on>
+            <sys_created_on>2022-03-30 02:56:02</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>ca64db9f9796c110002ffef3a253af49</sys_id>
+            <sys_id>50383da9972a4110002ffef3a253af10</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_616811_car_renta_calendar_days" name="x_616811_car_renta_calendar_days" sys_domain="global" view="Default view">c264db9f9796c110002ffef3a253af07</sys_ui_form>
-            <sys_ui_section caption="Duration" display_value="Duration" name="x_616811_car_renta_calendar_days" sys_domain="global" view="Default view">0664db9f9796c110002ffef3a253af06</sys_ui_section>
+            <sys_ui_section caption="Other Details" display_value="Other Details" name="x_616811_car_renta_calendar_days" sys_domain="global" view="Default view">98383da9972a4110002ffef3a253af0d</sys_ui_section>
             <sys_updated_by>maryanne.labasan</sys_updated_by>
-            <sys_updated_on>2022-03-23 09:52:37</sys_updated_on>
+            <sys_updated_on>2022-03-30 02:56:02</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_616811_car_renta_calendar_days</name>
