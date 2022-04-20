@@ -10,30 +10,25 @@
         <messages/>
         <name>Auto fill image</name>
         <order/>
-        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-   if (isLoading || newValue == '') {
-    return;
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
    }
-   //Type appropriate comment here, and begin script below
-
-	//var image = g_form.getReference('car', doAlert); // doAlert is our callback function
-	//var carimage = new GlideRecord('sys_attachment', image);
-	
 	var carimage = new GlideAjax('GetImagePicture');
 	carimage.addParam('sysparm_name','getImage');
-	carimage.addParam('sysparm_sys_id', g_form.getValue('car'));
-	carimage.getXML(populateImage);
+	carimage.addParam('sysparm_sys_id',newValue);
+	carimage.getXML(getImage);
 	
 
-}
-function populateImage(response) { //reference is passed into callback as first arguments
+	}
+	
+	function getImage(response) { //reference is passed into callback as first arguments
 
 	var imagefromScriptInclude = response.responseXML.documentElement.getAttribute("answer");
 	g_form.setValue('car_image', imagefromScriptInclude);
 
-
-
-
+   //Type appropriate comment here, and begin script below
+   
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>nieltabar</sys_created_by>
@@ -41,7 +36,7 @@ function populateImage(response) { //reference is passed into callback as first 
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>268cb521976a4110002ffef3a253afc6</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>Auto fill image</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
@@ -49,7 +44,7 @@ function populateImage(response) { //reference is passed into callback as first 
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sys_script_client_268cb521976a4110002ffef3a253afc6</sys_update_name>
         <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-04-04 03:01:18</sys_updated_on>
+        <sys_updated_on>2022-04-19 08:22:20</sys_updated_on>
         <table>x_616811_car_renta_scheduled_reservations</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

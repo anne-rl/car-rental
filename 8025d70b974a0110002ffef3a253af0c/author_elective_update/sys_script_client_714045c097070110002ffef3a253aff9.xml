@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>start_datetime</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>onChange start week platform</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	var today = new Date();
+
+	var start = new Date(g_form.getValue('start_datetime'));
+
+	var startdatetime = start.getDay();
+
+	
+    // Check if saturday or sunday
+	if (startdatetime == 6 || startdatetime == 0) {
+		g_form.showErrorBox('start_datetime', 'Start datetime must be within Business Days: Mon-Fri');
+		return false;
+	}
+   //Type appropriate comment here, and begin script below
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>nieltabar</sys_created_by>
+        <sys_created_on>2022-04-19 03:32:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>714045c097070110002ffef3a253aff9</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>onChange start week platform</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_script_client_714045c097070110002ffef3a253aff9</sys_update_name>
+        <sys_updated_by>nieltabar</sys_updated_by>
+        <sys_updated_on>2022-04-19 03:48:09</sys_updated_on>
+        <table>x_616811_car_renta_scheduled_reservations</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sys_script_client_714045c097070110002ffef3a253aff9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;start_datetime&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;onChange start week platform&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	var today = new Date();
+
+	var start = new Date(g_form.getValue('start_datetime'));
+
+	var startdatetime = start.getDay();
+
+	
+    // Check if saturday or sunday
+	if (startdatetime == 6 || startdatetime == 0) {
+		g_form.showErrorBox('start_datetime', 'Start datetime must be within Business Days: Mon-Fri');
+		return false;
+	}
+   //Type appropriate comment here, and begin script below
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;nieltabar&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-04-19 03:32:51&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;714045c097070110002ffef3a253aff9&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;onChange start week platform&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Car Rental Reservation" source="x_616811_car_renta"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Car Rental Reservation"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_714045c097070110002ffef3a253aff9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nieltabar&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-04-19 03:48:09&lt;/sys_updated_on&gt;&lt;table&gt;x_616811_car_renta_scheduled_reservations&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2097054382</payload_hash>
+        <record_name>onChange start week platform</record_name>
+        <reverted_from/>
+        <source>f854a0b997b64110002ffef3a253af51</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>nieltabar</sys_created_by>
+        <sys_created_on>2022-04-19 03:48:10</sys_created_on>
+        <sys_id>66e3c9c497070110002ffef3a253af93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1803fef50920000001</sys_recorded_at>
+        <sys_updated_by>nieltabar</sys_updated_by>
+        <sys_updated_on>2022-04-19 03:48:10</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>6ee3c9c4a60701102048848cae415092</update_guid>
+        <update_guid_history>6ee3c9c4a60701102048848cae415092:-2097054382,3a5309c4600701109a9fecdcce570097:798086124,12c20d84c20701100bc9d7e3ea7a4a57:1114365017,ffb2c984d2070110003abf455c8329bb:1596337216,8a92c584f6070110d72b1f0c6d48e2b3:477097255,5e6045c049070110a0501db32e261d45:-679808360</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>nieltabar</sys_created_by>
+        <sys_created_on>2022-04-19 04:02:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>3fe1db22c2c7402db325eff0b3e1f749</sys_id>
+        <sys_metadata>714045c097070110002ffef3a253aff9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onChange start week platform</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent display_value="Car Reservation">c076e70f978a0110002ffef3a253aff6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sys_script_client_714045c097070110002ffef3a253aff9</sys_update_name>
+        <sys_update_version display_value="sys_script_client_714045c097070110002ffef3a253aff9">66e3c9c497070110002ffef3a253af93</sys_update_version>
+        <sys_updated_by>nieltabar</sys_updated_by>
+        <sys_updated_on>2022-04-19 04:02:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

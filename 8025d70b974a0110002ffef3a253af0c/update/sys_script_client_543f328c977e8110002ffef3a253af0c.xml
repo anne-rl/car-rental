@@ -12,7 +12,7 @@
         <order/>
         <script><![CDATA[function onLoad() {
    //Type appropriate comment here, and begin script below
-    if (g_user.hasRole('x_616811_car_renta.client') && !g_user.hasRole('x_616811_car_renta.guest client')) {   
+    if (g_user.hasRole('x_616811_car_renta.client')&& !g_user.hasRole('x_616811_car_renta.guest client')) {   
 
 			   g_form.setDisplay('guest_applicant',false);  
 			   g_form.setDisplay('email_address',false);  
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>543f328c977e8110002ffef3a253af0c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Registered Client Rental</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
@@ -33,10 +33,10 @@
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sys_script_client_543f328c977e8110002ffef3a253af0c</sys_update_name>
         <sys_updated_by>maryanne.labasan</sys_updated_by>
-        <sys_updated_on>2022-04-07 02:31:33</sys_updated_on>
+        <sys_updated_on>2022-04-19 09:20:05</sys_updated_on>
         <table>x_616811_car_renta_scheduled_reservations</table>
         <type>onLoad</type>
-        <ui_type>0</ui_type>
+        <ui_type>10</ui_type>
         <view/>
     </sys_script_client>
 </record_update>

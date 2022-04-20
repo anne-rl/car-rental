@@ -23,7 +23,7 @@
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
-        <hidden>false</hidden>
+        <hidden>true</hidden>
         <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
@@ -68,14 +68,14 @@
         <sys_created_by>nieltabar</sys_created_by>
         <sys_created_on>2022-03-29 23:54:58</sys_created_on>
         <sys_id>cd1e05e597664110002ffef3a253af8b</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Car Image</sys_name>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>item_option_new_cd1e05e597664110002ffef3a253af8b</sys_update_name>
         <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-04-04 03:21:10</sys_updated_on>
+        <sys_updated_on>2022-04-19 07:40:40</sys_updated_on>
         <table/>
         <tooltip/>
         <type>33</type>

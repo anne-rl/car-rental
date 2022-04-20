@@ -29,17 +29,17 @@
 	var carimage = new GlideAjax('GetImagePicture');
 	carimage.addParam('sysparm_name','getImage');
 	carimage.addParam('sysparm_sys_id', g_form.getValue('car'));
-	carimage.getXML(populateImage);
+	carimage.getXML(getImage);
 	
 
-}
-function populateImage(response) { //reference is passed into callback as first arguments
+
+function getImage(response) { //reference is passed into callback as first arguments
 
 	var imagefromScriptInclude = response.responseXML.documentElement.getAttribute("answer");
 	g_form.setValue('car_image', imagefromScriptInclude);
 
 
-
+}
 
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
@@ -48,7 +48,7 @@ function populateImage(response) { //reference is passed into callback as first 
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c5c1a1ad97a64110002ffef3a253afcf</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>Auto fill image </sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
@@ -56,7 +56,7 @@ function populateImage(response) { //reference is passed into callback as first 
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>catalog_script_client_c5c1a1ad97a64110002ffef3a253afcf</sys_update_name>
         <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-04-01 07:14:11</sys_updated_on>
+        <sys_updated_on>2022-04-19 07:55:04</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

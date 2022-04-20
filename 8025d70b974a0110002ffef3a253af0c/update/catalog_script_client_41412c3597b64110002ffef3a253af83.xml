@@ -8,60 +8,51 @@
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
         <cat_item display_value="Car Rental Reservation">2627b0af97428110002ffef3a253afdf</cat_item>
-        <cat_variable>IO:2468b8ef97428110002ffef3a253afd0</cat_variable>
+        <cat_variable>IO:575a78a397828110002ffef3a253af80</cat_variable>
         <condition/>
         <description/>
         <field/>
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>onChange Reservation DateTime Unique</name>
+        <name>onchange start holiday validation</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
    if (isLoading || newValue == '') {
       return;
    }
-
    //Type appropriate comment here, and begin script below
-   g_form.hideErrorBox('car');
-	
-	var carId = g_form.getValue('car');
-	var startDateTime = new Date(g_form.getValue('start_datetime'));
-	var endDateTime = new Date(newValue);
 
-	var ga = new GlideAjax('ReservtionUtils'); 
-	ga.addParam("sysparm_name", "checkExistingReservation"); 
+	var holiday = new GlideAjax("CarRentalUtils");
+	holiday.addParam("sysparm_name", "isDateOnHoliday");
+	holiday.addParam("sysparm_dateTime", newValue);
 	
-	ga.addParam("sysparm_car_id", carId);
-	ga.addParam("sysparm_start_dt", startDateTime);
-	ga.addParam("sysparm_end_dt", endDateTime);
+	holiday.getXML(isDateOnHoliday);
 	
-	ga.getXML(getResponse);
-}
-
-function getResponse(response) {
-	var data = response.responseXML.documentElement.getAttribute('answer'); 
-	
-	if(data == 'true') {
-		g_form.showErrorBox('car', 'This car is not available at your chosen time');
+	function isDateOnHoliday(response){
+			var answer = response.responseXML.documentElement.getAttribute("answer");
+			if(answer == "true"){
+				g_form.showErrorBox("start_datetime","Start datetime must not be within holidays", true);
+			}
 	}
-
-}]]></script>
+	
+}
+]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>maryanne.labasan</sys_created_by>
-        <sys_created_on>2022-04-11 05:01:13</sys_created_on>
+        <sys_created_on>2022-04-12 01:31:01</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>1fb78ce597360110002ffef3a253af30</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>onChange Reservation DateTime Unique</sys_name>
+        <sys_id>41412c3597b64110002ffef3a253af83</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>onchange start holiday validation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
-        <sys_update_name>catalog_script_client_1fb78ce597360110002ffef3a253af30</sys_update_name>
+        <sys_update_name>catalog_script_client_41412c3597b64110002ffef3a253af83</sys_update_name>
         <sys_updated_by>maryanne.labasan</sys_updated_by>
-        <sys_updated_on>2022-04-11 05:19:43</sys_updated_on>
+        <sys_updated_on>2022-04-13 05:25:12</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

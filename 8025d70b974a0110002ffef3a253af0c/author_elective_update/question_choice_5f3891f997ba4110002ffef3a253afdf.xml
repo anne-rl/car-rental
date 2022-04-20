@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Duration Type">17a715b997ba4110002ffef3a253af9e</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-04-12 05:30:55</sys_created_on>
+        <sys_id>5f3891f997ba4110002ffef3a253afdf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Daily</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>question_choice_5f3891f997ba4110002ffef3a253afdf</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-04-12 05:31:14</sys_updated_on>
+        <text>Daily</text>
+        <value>daily</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=5f3891f997ba4110002ffef3a253afdf"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>question_choice_5f3891f997ba4110002ffef3a253afdf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>100</order><published_ref/><question display_value="Duration Type">17a715b997ba4110002ffef3a253af9e</question><sys_class_name>question_choice</sys_class_name><sys_created_by>maryanne.labasan</sys_created_by><sys_created_on>2022-04-12 05:30:55</sys_created_on><sys_id>5f3891f997ba4110002ffef3a253afdf</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Daily</sys_name><sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package><sys_policy/><sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope><sys_update_name>question_choice_5f3891f997ba4110002ffef3a253afdf</sys_update_name><sys_updated_by>maryanne.labasan</sys_updated_by><sys_updated_on>2022-04-12 05:31:14</sys_updated_on><text>Daily</text><value>daily</value></question_choice><fx_price action="delete_multiple" query="id=5f3891f997ba4110002ffef3a253afdf"/></record_update>]]></payload>
+        <payload_hash>797943799</payload_hash>
+        <record_name>Daily</record_name>
+        <reverted_from/>
+        <source>23a1de6f97920510002ffef3a253af50</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-04-12 05:31:14</sys_created_on>
+        <sys_id>906811f997ba4110002ffef3a253af69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1801c412b3e0000001</sys_recorded_at>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-04-12 05:31:14</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>986811f903ba41106d260d5f7423d068</update_guid>
+        <update_guid_history>986811f903ba41106d260d5f7423d068:797943799,6f48d1f98cba4110eeebdc97e90c7837:-911413845</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Daily">049a1dbd97ba4110002ffef3a253af74</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-04-12 05:40:47</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>224c63311397426887808ac01d371d44</sys_id>
+        <sys_metadata>5f3891f997ba4110002ffef3a253afdf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Daily</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent display_value="">17a715b997ba4110002ffef3a253af9e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>question_choice_5f3891f997ba4110002ffef3a253afdf</sys_update_name>
+        <sys_update_version display_value="question_choice_5f3891f997ba4110002ffef3a253afdf">906811f997ba4110002ffef3a253af69</sys_update_version>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-04-12 05:40:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -9,9 +9,9 @@
 </description>
         <name>CarRentalUtils</name>
         <script><![CDATA[var CarRentalUtils = Class.create();
-CarRentalUtils.prototype = {
-    initialize: function() {
-    },
+CarRentalUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
+ 
+   
 	
 	isDatePast: function(strDate){
     // Create GlideDateTime objects for the current date and the passed in date
@@ -99,69 +99,142 @@ CarRentalUtils.prototype = {
 	
 	
 	
-	dateFieldIsNotWithinBusinessHours: function(start, end){
+	dateFieldIsNotWithinBusinessHours: function(){
 		
-		var startDateTime = new GlideRecord(this.getParameter('sysparm_sTime'));
-		var endDateTime = new GlideRecord(this.getParameter('sysparm_eTime'));
 		
+		
+
+
 		var table = new GlideRecord("x_616811_car_renta_calendar_days");
 		table.addQuery("type","=","business");
 		table.addQuery("active", "=", true);
-		table.query();
-		table.next();
-
+	
+	    var startTime = new GlideDateTime(this.getParameter('sysparm_sTime'));
+		
 		var tableStartTime = new GlideDateTime(table.start_time);
 		var tableEndTime = new GlideDateTime(table.end_time);
 		
-		var businessHour = tableStartTime.getTime().getByFormat("HH:mm") +" - "+ 
-							tableEndTime.getTime().getByFormat("HH:mm");
 		
-		if(startDateTime.getTime() >= tableStartTime.getTime() && startDateTime.getTime() <=  tableEndTime.getTime() &&
-			endDateTime.getTime() <= tableEndTime.getTime() || endDateTime.getTime() > tableStartTime.getTime()){
-			return false;
-		} else{
+		
+		if(startTime.getHours() < tableStartTime.getHours() || startTime.getHours() > tableEndTime.getHours()){
 			return true;
 		}
-		
-		
-// 		if(field != ""){
-// 			return field +"|"+ businessHour;
-// 		} else{
-// 			return false;
-// 		}
-		
-		
+		else{
+			return false;
+		}
 	},
 	
 	isDateOnHoliday: function(){
 		
-		
-		
-		var table = new GlideRecord("x_616811_car_renta_calendar_days");
+	    var table = new GlideRecord("x_616811_car_renta_calendar_days");
 		table.addQuery("type","=","holiday");
 		table.addQuery("active", "=", true);
+		
+		var start= new GlideDateTime(this.getParameter('sysparm_dateTime'));
+		
+		table.addQuery('date','CONTAINS',start.getDate()); 
+		
 		table.query();
-		table.next();
-		
-		var startTime = new GlideRecord(this.getParameter('sysparm_startdateTime'));
-		
-		var startholiday = new GlideDateTime(table.date);
-		
-				
 	
-				
-		if(startTime.getDate() != startholiday.getDate()){
-			return false;
-		} else{
+	
+		
+		//if(tabletime.getDate() == start.getDate()){
+		//	return true;
+		//}
+		//else{
+		//	return false;
+		//}
+		if(table.getRowCount() != 0){
 			return true;
+		} else{
+			return false;
 		}
+	
 		
 	},
-
 	
-    type: 'CarRentalUtils'
-};
-
+	isstartDateOverlappingstart: function(){
+		
+		var table = new GlideRecord("x_616811_car_renta_scheduled_reservations");
+	
+		
+		var start= new GlideDateTime(this.getParameter('sysparm_dateTime'));
+		
+		table.addQuery('start_datetime','CONTAINS',start.getDate()); 
+	
+		
+		
+		table.query();
+		table.next();
+	
+	
+		
+		//if(tabletime.getDate() == start.getDate()){
+		//	return true;
+		//}
+		//else{
+		//	return false;
+		//}
+		if(table.getRowCount() != 0){
+			return true;
+		} else{
+			return false;
+		}
+	
+		
+		
+		//if(table.getRowCount() != 0){
+		///	return true;
+		//} else{
+		//	return false;
+	//	}
+	
+		
+	},
+	
+	 isstartDateOverlappingend: function(){
+		
+		var table = new GlideRecord("x_616811_car_renta_scheduled_reservations");
+	
+		
+		var start= new GlideDateTime(this.getParameter('sysparm_dateTime'));
+		
+		table.addQuery('end_datetime','CONTAINS',start.getDate()); 
+	
+		
+		
+		table.query();
+		table.next();
+	
+		
+		//if(tabletime.getDate() == start.getDate()){
+		//	return true;
+		//}
+		//else{
+		//	return false;
+		//}
+		if(table.getRowCount() != 0){
+			return true;
+		} else{
+			return false;
+		}
+	
+		
+		
+		//if(table.getRowCount() != 0){
+		///	return true;
+		//} else{
+		//	return false;
+	//	}
+	
+		
+	},
+	
+	
+   type: 'CarRentalUtils'
+});
+	
+	
 
 
    
@@ -171,13 +244,13 @@ CarRentalUtils.prototype = {
         <sys_created_by>maryanne.labasan</sys_created_by>
         <sys_created_on>2022-03-21 07:49:02</sys_created_on>
         <sys_id>69b3ac32971a0110002ffef3a253af6d</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>95</sys_mod_count>
         <sys_name>CarRentalUtils</sys_name>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sys_script_include_69b3ac32971a0110002ffef3a253af6d</sys_update_name>
-        <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-04-11 01:55:22</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-18 07:09:57</sys_updated_on>
     </sys_script_include>
 </record_update>

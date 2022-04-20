@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>end_datetime</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>onChange end business week/hours pf </name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+//isDateWithinBusinessHours
+
+	if(g_form.getValue("end_datetime") != "" ){
+		
+		var today = new Date();
+
+		var end = new Date(g_form.getValue('end_datetime'));
+		
+
+		var enddatetime = end.getHours();
+		
+		
+	
+	}
+		
+	
+	if (enddatetime < 9 ||  enddatetime > 21) {
+		g_form.showErrorBox('end_datetime', 'End datetime must be within business hours: 9:00 - 21:00');
+	}
+	
+
+
+	
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>nieltabar</sys_created_by>
+        <sys_created_on>2022-04-12 03:07:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1847f0f1973a4110002ffef3a253af6f</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>onChange end business week/hours pf </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_script_client_1847f0f1973a4110002ffef3a253af6f</sys_update_name>
+        <sys_updated_by>nieltabar</sys_updated_by>
+        <sys_updated_on>2022-04-19 04:19:17</sys_updated_on>
+        <table>x_616811_car_renta_scheduled_reservations</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sys_script_client_1847f0f1973a4110002ffef3a253af6f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;end_datetime&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;onChange end business week/hours pf &lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+//isDateWithinBusinessHours
+
+	if(g_form.getValue("end_datetime") != "" ){
+		
+		var today = new Date();
+
+		var end = new Date(g_form.getValue('end_datetime'));
+		
+
+		var enddatetime = end.getHours();
+		
+		
+	
+	}
+		
+	
+	if (enddatetime &lt; 9 ||  enddatetime &gt; 21) {
+		g_form.showErrorBox('end_datetime', 'End datetime must be within business hours: 9:00 - 21:00');
+	}
+	
+
+
+	
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;nieltabar&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-04-12 03:07:17&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;1847f0f1973a4110002ffef3a253af6f&lt;/sys_id&gt;&lt;sys_mod_count&gt;17&lt;/sys_mod_count&gt;&lt;sys_name&gt;onChange end business week/hours pf &lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Car Rental Reservation" source="x_616811_car_renta"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Car Rental Reservation"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_1847f0f1973a4110002ffef3a253af6f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nieltabar&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-04-19 04:19:17&lt;/sys_updated_on&gt;&lt;table&gt;x_616811_car_renta_scheduled_reservations&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1709771573</payload_hash>
+        <record_name>onChange end business week/hours pf </record_name>
+        <reverted_from/>
+        <source>f854a0b997b64110002ffef3a253af51</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>nieltabar</sys_created_by>
+        <sys_created_on>2022-04-19 04:19:17</sys_created_on>
+        <sys_id>e60b498097470110002ffef3a253af1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180400bce610000001</sys_recorded_at>
+        <sys_updated_by>nieltabar</sys_updated_by>
+        <sys_updated_on>2022-04-19 04:19:17</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>ee0b4980b84701107d4b6417a4c0cd1c</update_guid>
+        <update_guid_history>ee0b4980b84701107d4b6417a4c0cd1c:1709771573,e6da89408547011036bf920df41ee7ee:1115894017,83aa89408e470110ad46d487e5a9bc78:1063998658,d05a0540514701104e25f6be60083749:1709771573,124a094025470110226338aa29277e5d:804691433,9bb98d009f47011028b5f40ef2f6cad2:-1713059344,09890900864701102ab64df139a5d93c:1599685474,a0290100ef470110efa57790e95e5913:1243856212,81f78d4c720701109a1ea01cb2201494:1937867313,4ec7494c5707011037c0bb57a59af704:1502197597,a5640d086c070110baf136a091552d0f:-865964588,a344490860070110d5e27dfdbf6f3789:-879269669,24383035873a411055fb764056d15970:55591110,c528b0351f3a41103137d1b2c3902bf8:-9390478,54e7b435713a41107ae7924db7916b7a:-283269895,d9c73035bf3a411044a9a7b37071ca65:-1693578739,248778f11d3a4110cb726c5e9d488b70:-283269895,2f6770f10c3a41106c1dfae7be59cf16:937835548</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>nieltabar</sys_created_by>
+        <sys_created_on>2022-04-19 04:20:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>0c8e0d0bd92a4bc0a43e9701e1918510</sys_id>
+        <sys_metadata>1847f0f1973a4110002ffef3a253af6f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onChange end business week/hours pf </sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent display_value="Car Reservation">c076e70f978a0110002ffef3a253aff6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sys_script_client_1847f0f1973a4110002ffef3a253af6f</sys_update_name>
+        <sys_update_version display_value="sys_script_client_1847f0f1973a4110002ffef3a253af6f">e60b498097470110002ffef3a253af1d</sys_update_version>
+        <sys_updated_by>nieltabar</sys_updated_by>
+        <sys_updated_on>2022-04-19 04:20:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
