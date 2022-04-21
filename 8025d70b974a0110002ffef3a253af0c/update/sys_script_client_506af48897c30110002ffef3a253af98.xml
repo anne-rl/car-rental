@@ -8,82 +8,65 @@
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>onChange end holiday platform</name>
+        <name>onChange enddatetime holiday</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
    if (isLoading || newValue == '') {
       return;
    }
-	//g_form.addInfoMessage("hey");
 	
 	var holiday = new GlideAjax("CarRentalUtils");
 	holiday.addParam("sysparm_name", "isDateOnHoliday");
 	holiday.addParam("sysparm_dateTime", newValue);
 	
 	
-
-
 	holiday.getXML(isDateOnHoliday);
-	
-	//g_form.addInfoMessage(response);
-	
+		
 	function isDateOnHoliday(response){
 		
 			var scriptResponse = response.responseXML.documentElement.getAttribute("answer");
 			if(scriptResponse == "true"){
-				g_form.showErrorBox("end_datetime","End datetime must not be within holidays", true);
+				g_form.showErrorBox("end_datetime","There are no reservations during holidays. Please pick another date.", true);
 			}
-			
-			
 	}
 	
-
 	if(g_form.getValue("end_datetime") != "" ){
 		var today = new Date();
 
 		var enddate = new Date(g_form.getValue('end_datetime'));
-		
-
+	
 		var enddatetime = enddate.getHours();
 		
-		
-	
-	
-
 	}
 
 	if ( enddatetime < 9 ||  enddatetime > 21) {
-		g_form.showErrorBox('end_datetime', 'Start datetime must be within business hours: 9:00 - 21:00');
+		g_form.showErrorBox('end_datetime', 'Reservation must be within business hours: 9:00 - 21:00');
 	}
 	
-
 	var enddatetimeweek = enddate.getDay();
+	
     // Check if saturday or sunday
 	if (enddatetimeweek  == 6 || enddatetimeweek  == 0) {
-		g_form.showErrorBox('end_datetime', 'End datetime must be within Business Days: Mon-Fri');
+		g_form.showErrorBox('end_datetime', 'Reservation must be within business days: Mon-Fri');
 		return false;
 	}
 	
-}
-
-   //Type appropriate comment here, and begin script below
-   
-]]></script>
+}]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>nieltabar</sys_created_by>
         <sys_created_on>2022-04-19 03:07:19</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>506af48897c30110002ffef3a253af98</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>onChange end holiday platform</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>onChange enddatetime holiday</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sys_script_client_506af48897c30110002ffef3a253af98</sys_update_name>
-        <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-04-19 04:37:46</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-20 05:40:43</sys_updated_on>
         <table>x_616811_car_renta_scheduled_reservations</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

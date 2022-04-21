@@ -25,7 +25,7 @@
 	function isDateOnHoliday(response){
 			var answer = response.responseXML.documentElement.getAttribute("answer");
 			if(answer == "true"){
-				g_form.showErrorBox("start_datetime","Start datetime must not be within holidays", true);
+				g_form.showErrorBox("start_datetime","There are no reservations during holidays. Please pick another date.", true);
 			}
 	}
 	
@@ -37,15 +37,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c41a3c4897c30110002ffef3a253af61</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>onChange start holiday platform</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sys_script_client_c41a3c4897c30110002ffef3a253af61</sys_update_name>
-        <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-04-19 03:06:00</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-20 05:37:30</sys_updated_on>
         <table>x_616811_car_renta_scheduled_reservations</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

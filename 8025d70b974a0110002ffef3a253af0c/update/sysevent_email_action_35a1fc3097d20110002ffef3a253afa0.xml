@@ -39,13 +39,13 @@
 <p>Prepare the said amount on/before rent duration</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Car Client Notify Rent Price</name>
+        <name>Car Client Notify Rent Price 19</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
         <recipient_fields>email</recipient_fields>
         <recipient_groups/>
-        <recipient_users/>
+        <recipient_users>b282abf03710200044e0bfc8bcbe5d28,allan.schwantd@example.com</recipient_users>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
@@ -58,15 +58,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>35a1fc3097d20110002ffef3a253afa0</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>Car Client Notify Rent Price</sys_name>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Car Client Notify Rent Price 19</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sysevent_email_action_35a1fc3097d20110002ffef3a253afa0</sys_update_name>
         <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-03-15 04:54:10</sys_updated_on>
+        <sys_updated_on>2022-04-20 07:34:18</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

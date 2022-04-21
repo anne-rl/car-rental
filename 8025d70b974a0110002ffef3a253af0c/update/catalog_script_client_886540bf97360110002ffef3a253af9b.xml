@@ -22,15 +22,20 @@
       return;
    }
 	var startoverlap = new GlideAjax("CarRentalUtils");
+
+
 	startoverlap.addParam("sysparm_name", "isstartDateOverlappingstart");
 	startoverlap.addParam("sysparm_dateTime", newValue);
+	startoverlap.addParam("sysparm_endTime", g_form.getValue('end_datetime'));
+	
+	startoverlap.addParam("sysparm_car", g_form.getValue('car'));
 	
 	startoverlap.getXML(isstartDateOverlappingstart);
 	
 	function isstartDateOverlappingstart(response){
 			var answer = response.responseXML.documentElement.getAttribute("answer");
 			if(answer == "true"){
-				g_form.showErrorBox("start_datetime","Selected date is already occupied change Start datetime to another date", true);
+				g_form.showErrorBox('start_datetime','This car is already reserved on the selected date. Please pick another date.',true);
 			}
 	}
 
@@ -43,7 +48,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>886540bf97360110002ffef3a253af9b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>onChange start datetime overlap start</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
@@ -51,7 +56,7 @@
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>catalog_script_client_886540bf97360110002ffef3a253af9b</sys_update_name>
         <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-04-18 05:06:06</sys_updated_on>
+        <sys_updated_on>2022-04-21 06:04:30</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

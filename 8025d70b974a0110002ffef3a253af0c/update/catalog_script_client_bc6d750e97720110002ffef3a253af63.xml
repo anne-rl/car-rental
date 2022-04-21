@@ -38,7 +38,7 @@
 		
 			var scriptResponse = response.responseXML.documentElement.getAttribute("answer");
 			if(scriptResponse == "true"){
-				g_form.showErrorBox("end_datetime","End datetime must not be within holidays", true);
+				g_form.showErrorBox("end_datetime","There are no reservations during holidays. Please pick another date.", true);
 			}
 			
 			
@@ -53,15 +53,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bc6d750e97720110002ffef3a253af63</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>onChange end holiday</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>catalog_script_client_bc6d750e97720110002ffef3a253af63</sys_update_name>
-        <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-04-13 05:15:59</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-20 05:39:21</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

@@ -31,28 +31,28 @@
 	var startDateTime = new Date(g_form.getValue('start_datetime'));
 	var endDateTime = new Date(g_form.getValue('end_datetime'));
 
-	//If startdate = same day OKAY NA
+	//If startdate = same day
 	var startDateFormatted = startDateTime.getDate() + "/" + (startDateTime.getMonth() + 1) + "/" + startDateTime.getFullYear();
 	var todayFormatted = today.getDate() + "/" + (today.getMonth() + 1) + "/" + today.getFullYear();
 
 	if ((todayFormatted == startDateFormatted) && (newValue != oldValue)) {
-		g_form.showErrorBox('start_datetime', 'Reserving a car should not be reserved on the same day');
+		g_form.showErrorBox('start_datetime', 'Reservation should not be on the same day');
 		return;
 	}
 
-	//If stardate < today OKAY NA
+	//If stardate < today 
 	if ((startDateTime < today) && (newValue != oldValue)) {
-		g_form.showErrorBox('start_datetime', 'Start Date/Time cannot be in the past');
+		g_form.showErrorBox('start_datetime', 'Date must not be in the past');
 		return;
 	}
 
-	//If startdate > enddate OKAY NA
+	//If startdate is ahead of enddate 
 	if ((startDateTime > endDateTime) && (newValue != oldValue)) {
-		g_form.showErrorBox('start_datetime', 'Start Date/Time should be earlier than End Date/Time');
+		g_form.showErrorBox('start_datetime', 'Start date should not be ahead of End date');
 		return;
 	}
 	
-	//Business Days DI PANI MUGANA
+	//Business Days 
 	if(g_form.getValue("end_datetime") != "" && g_form.getValue("car") != ""){
 		var script = new GlideAjax("CarRentalUtils");
 		script.addParam("sysparm_name", "isDateNotWithinBusinessDays");
@@ -68,55 +68,39 @@
 			var scriptResponse = response.responseXML.documentElement.getAttribute("answer");
 			if(scriptResponse.includes("false")){
 			var days = scriptResponse.split(" ");
-				g_form.showErrorBox('start_datetime', 'Start and End datetime must be within Business Days: Mon-Fri');
+				g_form.showErrorBox('start_datetime', 'Reservation must be within business days: Mon-Fri');
 				
 			}
 	}
 	
 	//isDateWithinBusinessHours
-
 	if(g_form.getValue("start_datetime") != "" ){
 		
 		var today = new Date();
-
 		var start = new Date(g_form.getValue('start_datetime'));
-		
-
 		var startdatetime = start.getHours();
 				
-			
-		
-		
-	
-		
-	
 	if (startdatetime < 9 ||  startdatetime > 21) {
-		g_form.showErrorBox('start_datetime', 'Start datetime must be within business hours: 9:00 - 21:00');
+		g_form.showErrorBox('start_datetime', 'Reservation must be within business hours: 9:00 - 21:00');
 	}
 		
 	}
-}
-
-
-			
-
-
-]]></script>
+}]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>maryanne.labasan</sys_created_by>
         <sys_created_on>2022-03-30 02:23:39</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b540f121972a4110002ffef3a253af12</sys_id>
-        <sys_mod_count>108</sys_mod_count>
+        <sys_mod_count>109</sys_mod_count>
         <sys_name>OnChange StartDateTime Validation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>catalog_script_client_b540f121972a4110002ffef3a253af12</sys_update_name>
-        <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-04-19 03:57:38</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-20 05:48:33</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

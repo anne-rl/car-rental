@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="DELETE">
+        <active>false</active>
+        <conditions/>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+}]]></script_true>
+        <set_values/>
+        <short_description>Hide Guest Fields</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-04-07 02:33:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9b6f768c977e8110002ffef3a253afab</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Hide Guest Fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_ui_policy_9b6f768c977e8110002ffef3a253afab</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-04-20 04:44:43</sys_updated_on>
+        <table>x_616811_car_renta_scheduled_reservations</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sys_ui_policy_9b6f768c977e8110002ffef3a253afab</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;conditions/&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Hide Guest Fields&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;maryanne.labasan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-04-07 02:33:13&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9b6f768c977e8110002ffef3a253afab&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hide Guest Fields&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Car Rental Reservation" source="x_616811_car_renta"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Car Rental Reservation"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_9b6f768c977e8110002ffef3a253afab&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;maryanne.labasan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-04-20 04:44:43&lt;/sys_updated_on&gt;&lt;table&gt;x_616811_car_renta_scheduled_reservations&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1677330255</payload_hash>
+        <record_name>Hide Guest Fields</record_name>
+        <reverted_from/>
+        <source>e7a3421c97830110002ffef3a253af1e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-04-20 04:44:43</sys_created_on>
+        <sys_id>fc7a5ed497070110002ffef3a253afe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180454975230000001</sys_recorded_at>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-04-20 04:44:43</sys_updated_on>
+        <type>UI Policy</type>
+        <update_guid>387a5ed43f0701103dc70d689aa259e9</update_guid>
+        <update_guid_history>387a5ed43f0701103dc70d689aa259e9:1677330255,88021a4c0a8b01102ed2f5fac8ea91f6:1560673049,f101560c148b0110dc725e6f6cc73cc8:-778261248,e6f0160cf98b0110d065fee6e74f4adb:1011935200,6c1fca48f78b011006060711d15bec54:1382629567,d1ce8648658b0110975f7bfeeb758b6b:-176456807,3ddd8608748b0110d2e5f5144080e8b9:-426276255,811b0204a98b011025ac6e144f458142:-1937347019,6f37c2ccbd4b01107fad4ae43f98a68a:-2000563072,ab26064c124b011056de40d7627d1800:-1937347019,6132c2c4ff4b011052fb99551f141856:-2000563072,58608a04904b0110a605864fa3606bcd:-1937347019,2d8c31ccb10b0110038f18feaa457993:-2000563072,3bafb68c797e8110fc92a28327fdf2a4:-1937347019</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-04-20 04:56:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
+        <sys_id>3c77861eee2b4e5888b46bacb5757410</sys_id>
+        <sys_metadata>9b6f768c977e8110002ffef3a253afab</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hide Guest Fields</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent display_value="Car Reservation">c076e70f978a0110002ffef3a253aff6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_9b6f768c977e8110002ffef3a253afab</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_9b6f768c977e8110002ffef3a253afab">fc7a5ed497070110002ffef3a253afe9</sys_update_version>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-04-20 04:56:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

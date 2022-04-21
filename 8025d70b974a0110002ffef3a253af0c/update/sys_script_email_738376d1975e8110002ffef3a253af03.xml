@@ -7,8 +7,9 @@
           /* Optional GlideRecord */ event) {
 
           // Add your code here
-	email.addAddress("cc","tabarnielfred0@gmail.com","Niel Fred Tabar");
-	email.addAddress("cc","annelabasan03@gmail.com","Mary Anne Labasan");
+	email.addAddress("cc","bette.barcelona@example.com","Bette Barcelona");
+	email.addAddress("cc","abraham.lincoln@example.com","Abraham Lincoln");
+	email.addAddress("cc","carla.humble@example.com","Carla Humble");
 //if you want to push the user dynamically then you can use the scripting to validate and push the user.
 
 })(current, template, email, email_action, event);]]></script>
@@ -16,13 +17,13 @@
         <sys_created_by>nieltabar</sys_created_by>
         <sys_created_on>2022-03-17 02:23:53</sys_created_on>
         <sys_id>738376d1975e8110002ffef3a253af03</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>add_newusers_to_cc</sys_name>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sys_script_email_738376d1975e8110002ffef3a253af03</sys_update_name>
         <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-03-17 02:23:53</sys_updated_on>
+        <sys_updated_on>2022-04-20 08:01:58</sys_updated_on>
     </sys_script_email>
 </record_update>

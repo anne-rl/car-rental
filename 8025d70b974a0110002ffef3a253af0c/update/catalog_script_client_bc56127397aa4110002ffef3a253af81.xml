@@ -23,8 +23,6 @@
 
              g_form.setDisplay('applicant',false);  
 			 g_form.setDisplay('email',false);  
-			 g_form.setDisplay('duration_type',false);  
-
 
        }   
 	else if (g_user.hasRole('x_616811_car_renta.client')) {   
@@ -40,7 +38,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bc56127397aa4110002ffef3a253af81</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Guest Client Rental</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
@@ -48,7 +46,7 @@
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>catalog_script_client_bc56127397aa4110002ffef3a253af81</sys_update_name>
         <sys_updated_by>maryanne.labasan</sys_updated_by>
-        <sys_updated_on>2022-04-12 05:45:01</sys_updated_on>
+        <sys_updated_on>2022-04-20 04:39:40</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>

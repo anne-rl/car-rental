@@ -32,7 +32,7 @@
 
 	
 	if (enddatetime == 6 || enddatetime == 0) {
-		g_form.showErrorBox('end_datetime', 'Start datetime must be within Business Days: Mon-Fri');
+		g_form.showErrorBox('end_datetime', 'Reservation must be within business days: Mon-Fri');
 		return false;
 	}
 
@@ -46,15 +46,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>addd349397aa0110002ffef3a253afea</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>onChange end business days</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>catalog_script_client_addd349397aa0110002ffef3a253afea</sys_update_name>
-        <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-04-04 09:12:24</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-20 05:38:54</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

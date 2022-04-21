@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>start_datetime</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>onChange start datetime overlap end pf</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+	var startoverlap = new GlideAjax("CarRentalUtils");
+	startoverlap.addParam("sysparm_name", "isstartDateOverlappingend");
+	startoverlap.addParam("sysparm_dateTime", newValue);
+	startoverlap.addParam("sysparm_car", g_form.getValue('car'));
+	
+	
+	startoverlap.getXML(isstartDateOverlappingend);
+	
+	function isstartDateOverlappingend(response){
+			var answer = response.responseXML.documentElement.getAttribute("answer");
+			if(answer == "true"){
+				g_form.showErrorBox("start_datetime","This car is already reserved on the selected date. Please pick another date.", true);
+			}
+	}   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>nieltabar</sys_created_by>
+        <sys_created_on>2022-04-19 03:12:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c32b34c897c30110002ffef3a253af03</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>onChange start datetime overlap end pf</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sys_script_client_c32b34c897c30110002ffef3a253af03</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-04-21 05:17:08</sys_updated_on>
+        <table>x_616811_car_renta_scheduled_reservations</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sys_script_client_c32b34c897c30110002ffef3a253af03</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;start_datetime&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;onChange start datetime overlap end pf&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+	var startoverlap = new GlideAjax("CarRentalUtils");
+	startoverlap.addParam("sysparm_name", "isstartDateOverlappingend");
+	startoverlap.addParam("sysparm_dateTime", newValue);
+	startoverlap.addParam("sysparm_car", g_form.getValue('car'));
+	
+	
+	startoverlap.getXML(isstartDateOverlappingend);
+	
+	function isstartDateOverlappingend(response){
+			var answer = response.responseXML.documentElement.getAttribute("answer");
+			if(answer == "true"){
+				g_form.showErrorBox("start_datetime","This car is already reserved on the selected date. Please pick another date.", true);
+			}
+	}   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;nieltabar&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-04-19 03:12:42&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c32b34c897c30110002ffef3a253af03&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;onChange start datetime overlap end pf&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Car Rental Reservation" source="x_616811_car_renta"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Car Rental Reservation"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_c32b34c897c30110002ffef3a253af03&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;maryanne.labasan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-04-21 05:17:08&lt;/sys_updated_on&gt;&lt;table&gt;x_616811_car_renta_scheduled_reservations&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>533467856</payload_hash>
+        <record_name>onChange start datetime overlap end pf</record_name>
+        <reverted_from/>
+        <source>e7a3421c97830110002ffef3a253af1e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-04-21 05:17:08</sys_created_on>
+        <sys_id>997ba7e097470110002ffef3a253af38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1804a8d7e410000001</sys_recorded_at>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-04-21 05:17:08</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>d17ba7e0164701106ef8ddc3fcb1e938</update_guid>
+        <update_guid_history>d17ba7e0164701106ef8ddc3fcb1e938:533467856,f7641fdcfb0b0110451e838dada91b54:-1397996446,de0417dc770b011008ea4b20d5cc465c:873514754,ef8dc7d46a0b0110073302972e1d5b12:206340313,a0e5e218e6470110df1f3c0b25b57977:269170467,dfcbf40cd2c30110b876b5a08164bedb:855566562</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>nieltabar</sys_created_by>
+        <sys_created_on>2022-04-21 07:21:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>15bebe8bbd5f48a6a7ce58bf67047eb1</sys_id>
+        <sys_metadata>c32b34c897c30110002ffef3a253af03</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onChange start datetime overlap end pf</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent display_value="Car Reservation">c076e70f978a0110002ffef3a253aff6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sys_script_client_c32b34c897c30110002ffef3a253af03</sys_update_name>
+        <sys_update_version display_value="sys_script_client_c32b34c897c30110002ffef3a253af03">997ba7e097470110002ffef3a253af38</sys_update_version>
+        <sys_updated_by>nieltabar</sys_updated_by>
+        <sys_updated_on>2022-04-21 07:21:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

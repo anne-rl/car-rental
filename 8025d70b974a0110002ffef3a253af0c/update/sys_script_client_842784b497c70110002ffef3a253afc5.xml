@@ -17,13 +17,17 @@
 	var startoverlap = new GlideAjax("CarRentalUtils");
 	startoverlap.addParam("sysparm_name", "isstartDateOverlappingend");
 	startoverlap.addParam("sysparm_dateTime", newValue);
+	startoverlap.addParam("sysparm_endTime", g_form.getValue('end_datetime'));
+	startoverlap.addParam("sysparm_car", g_form.getValue('car'));
 	
 	startoverlap.getXML(isstartDateOverlappingend);
+	
+	
 	
 	function isstartDateOverlappingend(response){
 			var answer = response.responseXML.documentElement.getAttribute("answer");
 			if(answer == "true"){
-				g_form.showErrorBox("start_datetime","Selected date is already occupied change Start datetime to another date", true);
+				g_form.showErrorBox("start_datetime","This car is already reserved on the selected date. Please pick another date.", true);
 			}
 	}
 
@@ -32,19 +36,19 @@
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>nieltabar</sys_created_by>
-        <sys_created_on>2022-04-19 03:12:42</sys_created_on>
+        <sys_created_on>2022-04-21 07:18:43</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>c32b34c897c30110002ffef3a253af03</sys_id>
+        <sys_id>842784b497c70110002ffef3a253afc5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>onChange start datetime overlap end pf</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
-        <sys_update_name>sys_script_client_c32b34c897c30110002ffef3a253af03</sys_update_name>
+        <sys_update_name>sys_script_client_842784b497c70110002ffef3a253afc5</sys_update_name>
         <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-04-19 03:12:42</sys_updated_on>
+        <sys_updated_on>2022-04-21 07:18:43</sys_updated_on>
         <table>x_616811_car_renta_scheduled_reservations</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
