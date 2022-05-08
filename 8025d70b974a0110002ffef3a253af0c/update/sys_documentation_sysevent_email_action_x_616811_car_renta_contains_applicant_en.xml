@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_616811_car_renta_contains_applicant" label="Contains Applicant" language="en" table="sysevent_email_action">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_616811_car_renta_contains_applicant</element>
+            <help/>
+            <hint/>
+            <label>Contains Applicant</label>
+            <language>en</language>
+            <name>sysevent_email_action</name>
+            <plural>Contains Applicants</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>nieltabar</sys_created_by>
+            <sys_created_on>2022-04-22 03:41:25</sys_created_on>
+            <sys_id>342f50cd974b4110002ffef3a253afd5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Contains Applicant</sys_name>
+            <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+            <sys_update_name>sys_documentation_sysevent_email_action_x_616811_car_renta_contains_applicant_en</sys_update_name>
+            <sys_updated_by>nieltabar</sys_updated_by>
+            <sys_updated_on>2022-04-22 03:41:25</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

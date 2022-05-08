@@ -11,7 +11,13 @@
         <script><![CDATA[var CarRentalUtils = Class.create();
 CarRentalUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
  
-   
+    isCarAvailable: function() {
+		
+		var availableCars = new GlideRecord("x_616811_car_renta_car_records");
+		availableCars.get(this.getParameter('sysparm_car_id'));
+		if(availableCars.u_boolean_1 == 1)
+			return true;
+    },
 	
 	isDatePast: function(strDate){
     // Create GlideDateTime objects for the current date and the passed in date
@@ -27,29 +33,75 @@ CarRentalUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
     }
   },
 	
-		
 	isstartDateWithinBusinessHours: function(){
 		
-		var startTime = new GlideRecord(this.getParameter('sysparm_startTime'));
-	
+		var startTime = new GlideDateTime(this.getParameter('sysparm_startTime'));
+		//var endTime = new GlideDateTime(this.getParameter('sysparm_eTime'));
+		var starttime2 = startTime.getTime().getHourOfDayUTC();
+		var startint = parseInt(starttime2);
+		//var hour = new GlideTime();
+		//hour.setValue("08:00:00");
+		//startTime.add(hour);
+		
+		//var start = new GlideTime();
+		//start.setValue("09:00:00");
+		
+		
+		//var end = new GlideTime();
+		//end.setValue("21:00:00");
+		
 		var table = new GlideRecord("x_616811_car_renta_calendar_days");
 		table.addQuery("type","=","business");
 		table.addQuery("active", "=", true);
+		//var tableStartTime = new GlideDateTime(table.start_time);
+		
+		//var startTime = new GlideDateTime(this.getParameter('sysparm_startTime'));
+		//var endTime = new GlideDateTime(this.getParameter('sysparm_eTime'));
+		//var starttime2 = startTime.getTime().getHourOfDayUTC();
+		//var startint = parseInt(starttime2);
+		//var hour = new GlideTime();
+		//hour.setValue("08:00:00");
+		//startTime.add(hour);
+		
+		//var start = table.getValue('start_time');
+		
+		//var startTime = new GlideDateTime(start);
+		
+		//var start2 = new GlideTime(start);
+		
+		//table.addQuery('start_time','<=', startTime.getTime().getDisplayValueInternal());
+		//table.addQuery('end_time','>=', startTime.getTime().getDisplayValueInternal());
 		table.query();
 		table.next();
 		
-		var tableStartTime = new GlideDateTime(table.start_time);
-		var tableEndTime = new GlideDateTime(table.end_time);
 		
+		
+	
+		
+		//var tableEndTime = new GlideDateTime(table.end_time);
 
-		if(startTime.getTime() >= tableStartTime.getTime() && startTime.getTime() <=  tableEndTime.getTime())
-		{
+		
+		
+		//return start;
+		
+		
+		/*if(table.getRowCount() != 0){
+			return true;
+			
+		} else{
+			return false;	
+		}*/
+		if(startint >= 9 && startint <= 21)
+			{
+				return true;
+			}
+		else{
 			return false;
 		}
-		else{
-			return true;
-		}
+		
+			
 	},
+	
 	
 		
 	isendDateWithinBusinessHours: function(){
@@ -63,10 +115,11 @@ CarRentalUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
 		table.next();
 		
 		var tableStartTime = new GlideDateTime(table.start_time);
+		var tableStartTime2 = tableStartTime.getTime().getDisplayValue();
 		var tableEndTime = new GlideDateTime(table.end_time);
-		
+		var tableEndTime2 = tableEndTime.getTime().getDisplayValue();
 
-		if(endTime.getTime() >= tableStartTime.getTime() && endTime.getTime() <=  tableEndTime.getTime())
+		if(endTime.getTime() >= tableStartTime2 && endTime.getTime() >  tableEndTime2)
 		{
 			return false;
 		}
@@ -74,6 +127,7 @@ CarRentalUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
 			return true;
 		}
 	},
+	
 	isDateNotWithinBusinessDays: function(){
 	var carRecords = new GlideRecord("x_616811_car_renta_scheduled_reservations");
 	var obj = carRecords.get(this.getParameter('sysparm_car'));
@@ -91,7 +145,6 @@ CarRentalUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
 	},
 	
 	
-	
 	dateFieldIsNotWithinBusinessHours: function(){
 		
 		var table = new GlideRecord("x_616811_car_renta_calendar_days");
@@ -102,8 +155,6 @@ CarRentalUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
 		
 		var tableStartTime = new GlideDateTime(table.start_time);
 		var tableEndTime = new GlideDateTime(table.end_time);
-		
-		
 		
 		if(startTime.getHours() < tableStartTime.getHours() || startTime.getHours() > tableEndTime.getHours()){
 			return true;
@@ -119,6 +170,7 @@ CarRentalUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
 		
 		var start= new GlideDateTime(this.getParameter('sysparm_dateTime'));
 		
+		
 		table.addQuery('date','CONTAINS',start.getDate()); 
 		
 		table.query();
@@ -133,19 +185,14 @@ CarRentalUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
 	},
 	
 	isstartDateOverlappingstart: function(){
-		
-
 	
-		
 		var start= new GlideDateTime(this.getParameter('sysparm_dateTime'));
 		var end= new GlideDateTime(this.getParameter('sysparm_endTime'));
 		var car=  this.getParameter('sysparm_car');
-		
-		
+			
 		//var starttime = new GlideDateTime(table.start_datetime);
 		
 		//var endtime = new GlideDateTime(table.end_datetime);
-
 		
 		var table = new GlideRecord("x_616811_car_renta_scheduled_reservations");
 		//var car2 = new GlideElement(table.car);
@@ -154,10 +201,7 @@ CarRentalUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
 		table.addQuery("end_datetime", ">=", start.getDate());
 		
 		//start.addDaysUTC(1);
-// 		
-// 		
-		
-	
+
 		table.query();
 		table.next();
 		//if(starttime <= start.getDate() && endtime >= start.getDate()){
@@ -175,10 +219,7 @@ CarRentalUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
 	},
 	
 	isstartDateOverlappingend: function(){
-		
 
-	
-		
 		var start= new GlideDateTime(this.getParameter('sysparm_dateTime'));
 		var end= new GlideDateTime(this.getParameter('sysparm_endTime'));
 		var car=  this.getParameter('sysparm_car');
@@ -193,13 +234,8 @@ CarRentalUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
 		//var car2 = new GlideElement(table.car);
 		table.addQuery("car",car);
 		table.addQuery("start_datetime","CONTAINS", start.getDate());
-
-		
-		//start.addDaysUTC(1);
-// 		
-// 		
-		
 	
+		//start.addDaysUTC(1);
 		table.query();
 		table.next();
 		//if(starttime <= start.getDate() && endtime >= start.getDate()){
@@ -217,27 +253,45 @@ CarRentalUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
 
 		
 		},
+	rentPriceNotify: function(){
+	var start = new GlideDateTime(this.getParameter('sysparm_startdatetime'));
+	var end = new GlideDateTime(this.getParameter('sysparm_enddatetime'));
+	var price = this.getParameter('sysparm_rentprice');
+	var diff = GlideDateTime.subtract(start, end);
+	var days = diff.getRoundedDayPart();
+		
+	
+
+	return 'Prepare the said amount ₱'+ days * price +' on or before rent duration' ;
+	},
+	
+		rentPriceNotify1: function(){
+	var start = new GlideDateTime(this.getParameter('sysparm_startdatetime'));
+	var end = new GlideDateTime(this.getParameter('sysparm_enddatetime'));
+	var price = this.getParameter('sysparm_rentprice');
+	
+			
+	var diff = GlideDateTime.subtract(start, end);
+	var days = diff.getRoundedDayPart();
+		
+	
+
+	return 'Rent Price updated Prepare the said amount ₱'+ days * price +' on or before rent duration' ;
+	},
 	
    type: 'CarRentalUtils'
-});
-	
-	
-
-
-   
-
-]]></script>
+});]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>maryanne.labasan</sys_created_by>
         <sys_created_on>2022-03-21 07:49:02</sys_created_on>
         <sys_id>69b3ac32971a0110002ffef3a253af6d</sys_id>
-        <sys_mod_count>251</sys_mod_count>
+        <sys_mod_count>507</sys_mod_count>
         <sys_name>CarRentalUtils</sys_name>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sys_script_include_69b3ac32971a0110002ffef3a253af6d</sys_update_name>
         <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-04-21 07:02:31</sys_updated_on>
+        <sys_updated_on>2022-05-04 12:26:27</sys_updated_on>
     </sys_script_include>
 </record_update>

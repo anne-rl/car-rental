@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="no_labels=true,update_synch=true" audit="true" extends="sysrule" label="Notification" max_length="40" name="sysevent_email_action" sizeclass="312" text_index="true" type="collection">
+        <element attributes="encode_utf8=false" label="Car Reserve contains applicant" max_length="32" name="x_616811_car_renta_car_reserve_contains_applicant" reference="x_616811_car_renta_scheduled_reservations" type="reference"/>
+        <element attributes="encode_utf8=false" label="Contains Applicant" max_length="32" name="x_616811_car_renta_contains_applicant" reference="x_616811_car_renta_scheduled_reservations" type="reference"/>
+    </element>
+</database>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>false</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Car Rental Reservation">2627b0af97428110002ffef3a253afdf</cat_item>
+        <cat_variable/>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>onSubmit startdate overlap start</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+   var startoverlap = new GlideAjax("CarRentalUtils");
+
+
+	startoverlap.addParam("sysparm_name", "isstartDateOverlappingstart");
+	startoverlap.addParam("sysparm_dateTime", g_form.getValue('start_datetime'));
+	startoverlap.addParam("sysparm_endTime", g_form.getValue('end_datetime'));
+	
+	startoverlap.addParam("sysparm_car", g_form.getValue('car'));
+	
+	startoverlap.getXML(isstartDateOverlappingstart);
+	
+	function isstartDateOverlappingstart(response){
+			var answer = response.responseXML.documentElement.getAttribute("answer");
+			if(answer == "true"){
+				g_form.addErrorMessage('This car is already reserved on the selected date. Please pick another date.');
+			}
+	}
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>nieltabar</sys_created_by>
+        <sys_created_on>2022-04-29 02:48:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0c16d0d797c74110002ffef3a253afa1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>onSubmit startdate overlap start</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>catalog_script_client_0c16d0d797c74110002ffef3a253afa1</sys_update_name>
+        <sys_updated_by>nieltabar</sys_updated_by>
+        <sys_updated_on>2022-04-29 03:03:31</sys_updated_on>
+        <table/>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="CRR Car Complaints Data" max_length="40" name="x_616811_car_renta_crr_car_complaints_data" sizeclass="4" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Applicant Name" label="Applicant Name" max_length="40" name="u_applicant_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Car" label="Car" max_length="40" name="u_car" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Date Used" label="Date Used" max_length="40" name="u_date_used" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Details" label="Details" max_length="40" name="u_details" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Issue" label="Issue" max_length="40" name="u_issue" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Other" label="Other" max_length="40" name="u_other" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Reservation" label="Reservation" max_length="40" name="u_reservation" type="string"/>
+    </element>
+</database>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Car Reservation" max_length="40" name="x_616811_car_renta_scheduled_reservations" sizeclass="9" type="collection">
+    <element label="Car Reservation" max_length="40" name="x_616811_car_renta_scheduled_reservations" sizeclass="10" type="collection">
         <element label="Applicant" max_length="40" name="applicant" read_only="true" reference="sys_user" type="reference"/>
         <element attributes="readonly_clickthrough=true " label="Car" max_length="40" name="car" read_only="true" reference="x_616811_car_renta_car_records" type="reference"/>
         <element label="Car Image" max_length="40" name="car_image" type="user_image"/>
@@ -11,6 +11,7 @@
         <element attributes="edge_encryption_enabled=true" label="Guest Name" mandatory="true" max_length="40" name="guest_applicant" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Remarks" max_length="100" name="remarks" type="string"/>
+        <element label="Rent Per Day" max_length="20" name="rent_amount" read_only="true" type="price"/>
         <element label="Seat Capacity" max_length="32" name="seat_capacity" read_only="true" reference="x_616811_car_renta_car_records" type="reference"/>
         <element label="Start Datetime" mandatory="true" max_length="40" name="start_datetime" type="glide_date_time"/>
         <index name="index">

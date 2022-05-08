@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <description/>
+        <event_name>x_616811_car_renta.Car Record Update</event_name>
+        <fired_by>Business Rule: User Has Updated the Car record</fired_by>
+        <queue/>
+        <suffix>Car Record Update</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-22 04:25:50</sys_created_on>
+        <sys_id>e7872009978b4110002ffef3a253afce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_616811_car_renta.Car Record Update</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sysevent_register_e7872009978b4110002ffef3a253afce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-22 04:25:50</sys_updated_on>
+        <table>x_616811_car_renta_car_records</table>
+    </sysevent_register>
+</record_update>

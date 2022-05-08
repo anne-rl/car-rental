@@ -5,18 +5,9 @@
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
-        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <category display_value="Customer Service" name="Customer Service">a69d02137f232200ee2e108c3ffa9130</category>
         <collection>x_616811_car_renta_car_records</collection>
-        <condition table="x_616811_car_renta_car_records">nameVALCHANGES^ORadd_onsVALCHANGES^ORdescriptionVALCHANGES^ORseating_capacityVALCHANGES^ORtypeVALCHANGES^ORrentVALCHANGESjavascript:global.getCurrencyFilter('x_616811_car_renta_car_records','rent', 'USD;USD')^ORnameVALCHANGES^ORinsuranceVALCHANGES^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
-            <item endquery="false" field="add_ons" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
-            <item endquery="false" field="description" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
-            <item endquery="false" field="seating_capacity" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
-            <item endquery="false" field="type" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
-            <item endquery="false" field="rent" goto="false" newquery="false" operator="VALCHANGES" or="true" value="javascript:global.getCurrencyFilter('x_616811_car_renta_car_records','rent', 'USD;USD')"/>
-            <item endquery="false" field="name" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
-            <item endquery="false" field="insurance" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </condition>
+        <condition/>
         <content_type>text/html</content_type>
         <default_interval/>
         <description/>
@@ -31,13 +22,13 @@
         <digest_template/>
         <digest_text/>
         <digestable>false</digestable>
-        <event_name>activate.life.cycle.migration</event_name>
-        <event_parm_1>false</event_parm_1>
+        <event_name>x_616811_car_renta.Car Record Update</event_name>
+        <event_parm_1>true</event_parm_1>
         <event_parm_2>false</event_parm_2>
         <exclude_delegates>false</exclude_delegates>
         <force_delivery>false</force_delivery>
         <from/>
-        <generation_type>engine</generation_type>
+        <generation_type>event</generation_type>
         <importance/>
         <include_attachments>false</include_attachments>
         <item>event.parm1</item>
@@ -45,7 +36,9 @@
         <mandatory>false</mandatory>
         <message/>
         <message_html><![CDATA[<p><strong>${mail_script:add_newusers_to_cc}</strong></p>
-<p>Details of the Car you've reserved have been updated&nbsp;</p>
+<div style="list-style-type: none;" tabindex="-1" role="button">Dear Clients,</div>
+<div style="list-style-type: none;" tabindex="-1" role="button">&nbsp;</div>
+<div style="list-style-type: none;" tabindex="-1" role="button">Good day, This is to notify you that the details of the car that you have reserved have been updated. Please check the details for your information.</div>
 <p>Updated by: ${sys_updated_by}</p>]]></message_html>
         <message_list/>
         <message_text/>
@@ -54,13 +47,13 @@
         <order>100</order>
         <push_message_only>false</push_message_only>
         <recipient_fields/>
-        <recipient_groups name="Car Rental Reservation Users">89b59bd997de8110002ffef3a253affe</recipient_groups>
-        <recipient_users>22826bf03710200044e0bfc8bcbe5dec,a2826bf03710200044e0bfc8bcbe5ded,be82abf03710200044e0bfc8bcbe5d1c,b282abf03710200044e0bfc8bcbe5d28,alejandra.prenatt@example.com,alejandro.mascall@example.com,alene.rabeck@example.com,allan.schwantd@example.com,6db2fe8397c60110002ffef3a253af22,tabarnielfred0@gmail.com</recipient_users>
+        <recipient_groups/>
+        <recipient_users/>
         <reply_to/>
-        <send_self>true</send_self>
+        <send_self>false</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Car Record Detail updated</subject>
+        <subject>Car Details Updated</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>nieltabar</sys_created_by>
@@ -68,18 +61,20 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b5a23291975e8110002ffef3a253afd5</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Car record notify client update 25</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sysevent_email_action_b5a23291975e8110002ffef3a253afd5</sys_update_name>
-        <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-04-20 07:51:03</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-22 04:28:17</sys_updated_on>
         <sys_version>2</sys_version>
-        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <template display_value="Employee notification template">1462e7ca918a3010f877b1d70a4d6a3d</template>
         <type>email</type>
         <weight>0</weight>
+        <x_616811_car_renta_car_reserve_contains_applicant/>
+        <x_616811_car_renta_contains_applicant/>
     </sysevent_email_action>
 </record_update>

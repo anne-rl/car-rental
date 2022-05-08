@@ -35,9 +35,11 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Car Reservation with a Reservation Number: ${number}&nbsp;</p>
-<p>Car: ${car} is updated</p>
-<p>updated by : ${guest_applicant}&nbsp; ${applicant}</p>]]></message_html>
+        <message_html><![CDATA[<div style="list-style-type: none;" tabindex="-1" role="button">Dear Receptionists,</div>
+<p>Good day, This is to notify you that a scheduled reservation has been updated.</p>
+<p>Car Reservation Details:<br />Number: ${number}<br />Car: ${car}<br />Start Datetime: ${start_datetime}</p>
+<p>End Datetime: ${end_datetime}</p>
+<p>Click here to view the record : <a href="https://dev88149.service-now.com/now/nav/ui/classic/params/target/x_616811_car_renta_scheduled_reservations_list.do%3Fsysparm_userpref_module%3Dc53b506b97ce4110002ffef3a253af44">Car Rental Reservation</a></p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>Car Reservation Updated 24</name>
@@ -46,12 +48,12 @@
         <push_message_only>false</push_message_only>
         <recipient_fields/>
         <recipient_groups/>
-        <recipient_users>e6826bf03710200044e0bfc8bcbe5deb,bette.barcelona@example.com,a8f98bb0eb32010045e1a5115206fe3a,abraham.lincoln@example.com,a6826bf03710200044e0bfc8bcbe5def,carla.humble@example.com</recipient_users>
+        <recipient_users>e6826bf03710200044e0bfc8bcbe5deb,bette.barcelona@example.com,a8f98bb0eb32010045e1a5115206fe3a,abraham.lincoln@example.com,a6826bf03710200044e0bfc8bcbe5def,carla.humble@example.com,tabarnielfred0@gmail.com</recipient_users>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject/>
+        <subject>Scheduled Reservation Updated</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>nieltabar</sys_created_by>
@@ -59,7 +61,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e72e7e9497c70110002ffef3a253aff4</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Car Reservation Updated 24</sys_name>
         <sys_overrides/>
         <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
@@ -67,10 +69,12 @@
         <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
         <sys_update_name>sysevent_email_action_e72e7e9497c70110002ffef3a253aff4</sys_update_name>
         <sys_updated_by>nieltabar</sys_updated_by>
-        <sys_updated_on>2022-04-20 07:34:57</sys_updated_on>
+        <sys_updated_on>2022-04-28 05:11:58</sys_updated_on>
         <sys_version>2</sys_version>
-        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <template display_value="Employee notification template">1462e7ca918a3010f877b1d70a4d6a3d</template>
         <type>email</type>
         <weight>0</weight>
+        <x_616811_car_renta_car_reserve_contains_applicant/>
+        <x_616811_car_renta_contains_applicant/>
     </sysevent_email_action>
 </record_update>

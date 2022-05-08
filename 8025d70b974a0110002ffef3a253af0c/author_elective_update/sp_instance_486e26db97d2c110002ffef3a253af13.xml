@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">be503a9f97d2c110002ffef3a253af46</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-03-23 07:06:28</sys_created_on>
+        <sys_id>486e26db97d2c110002ffef3a253af13</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sp_instance_486e26db97d2c110002ffef3a253af13</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-04-04 08:31:16</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<h1 style=\"text-align: center; color: #283845; font-size: 300%;\" data-mce-style=\"text-align: center; color: #283845; font-size: 300%;\"><strong>&nbsp;</strong></h1><h1 style=\"text-align: center; color: #283845; font-size: 300%;\" data-mce-style=\"text-align: center; color: #283845; font-size: 300%;\"><strong>LIST OF&nbsp;AVAILABLE CARS</strong></h1>",
+		"displayValue": "<h1 style=\"text-align: center; color: #283845; font-size: 300%;\"><strong>&nbsp;</strong></h1>\n<h1 style=\"text-align: center; color: #283845; font-size: 300%;\"><strong>LIST OF&nbsp;AVAILABLE CARS</strong></h1>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=486e26db97d2c110002ffef3a253af13"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</application>
+        <file_path/>
+        <instance_id>59254ac3db06f3c852cec597059619f5</instance_id>
+        <instance_name>dev88149</instance_name>
+        <name>sp_instance_486e26db97d2c110002ffef3a253af13</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;2&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;be503a9f97d2c110002ffef3a253af46&lt;/sp_column&gt;&lt;sp_widget display_value="HTML"&gt;8679ef89cb21120000f8d856634c9c4f&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;maryanne.labasan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-23 07:06:28&lt;/sys_created_on&gt;&lt;sys_id&gt;486e26db97d2c110002ffef3a253af13&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Car Rental Reservation" source="x_616811_car_renta"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Car Rental Reservation"&gt;8025d70b974a0110002ffef3a253af0c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_486e26db97d2c110002ffef3a253af13&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;maryanne.labasan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-04-04 08:31:16&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"html": {
+		"value": "&lt;h1 style=\"text-align: center; color: #283845; font-size: 300%;\" data-mce-style=\"text-align: center; color: #283845; font-size: 300%;\"&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/h1&gt;&lt;h1 style=\"text-align: center; color: #283845; font-size: 300%;\" data-mce-style=\"text-align: center; color: #283845; font-size: 300%;\"&gt;&lt;strong&gt;LIST OF&amp;nbsp;AVAILABLE CARS&lt;/strong&gt;&lt;/h1&gt;",
+		"displayValue": "&lt;h1 style=\"text-align: center; color: #283845; font-size: 300%;\"&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/h1&gt;\n&lt;h1 style=\"text-align: center; color: #283845; font-size: 300%;\"&gt;&lt;strong&gt;LIST OF&amp;nbsp;AVAILABLE CARS&lt;/strong&gt;&lt;/h1&gt;"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=486e26db97d2c110002ffef3a253af13"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1791862063</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>23a1de6f97920510002ffef3a253af50</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-04-04 08:31:16</sys_created_on>
+        <sys_id>2fd43817976a0110002ffef3a253af78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ff3b31d300000001</sys_recorded_at>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-04-04 08:31:16</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>27d43817116a011052d58725da1e6578</update_guid>
+        <update_guid_history>27d43817116a011052d58725da1e6578:1791862063,fdca9d9941660110613108cf427b9a9e:1080519663,2aa072df9fd2c110b0cc990e6d122fd7:-1313106258,ef60ba9feed2c110bebf1eea86e3c29f:-933606194,7750ba9f54d2c11012982f58cf324a53:-1465774210,8720369f37d2c1101976a6acce1faabd:96052933,d020b29f80d2c1107df71ad1dc5bd314:-2006444967,b36fe25f8ad2c110647ba01fe58389c2:1676206615,1e6f625fa0d2c11032b5ae808a1434fc:1748284949,7b5f625f35d2c11025f042b310ff5869:481971607,c43f6a1f90d2c110c4029a49c11821ab:892651882,b5de6edbc9d2c110024c1df10c432a36:-1023249923,806e26dbb0d2c1106fec51f131214015:946811447</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">ed033dda970f4110002ffef3a253af9f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-04-26 07:00:19</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>285debc8ffb54f849d8830169bbf64a4</sys_id>
+        <sys_metadata>486e26db97d2c110002ffef3a253af13</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_scope_delete display_value="">2138fddb26a54d1cab38effb53c35881</sys_scope_delete>
+        <sys_update_name>sp_instance_486e26db97d2c110002ffef3a253af13</sys_update_name>
+        <sys_update_version display_value="sp_instance_486e26db97d2c110002ffef3a253af13">2fd43817976a0110002ffef3a253af78</sys_update_version>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-04-26 07:00:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">f57271da970f4110002ffef3a253af58</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>maryanne.labasan</sys_created_by>
+        <sys_created_on>2022-04-26 06:59:16</sys_created_on>
+        <sys_id>d6c2bd9a970f4110002ffef3a253af18</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sp_instance_d6c2bd9a970f4110002ffef3a253af18</sys_update_name>
+        <sys_updated_by>maryanne.labasan</sys_updated_by>
+        <sys_updated_on>2022-04-26 07:00:43</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<h1>&nbsp;</h1><h1>&nbsp;</h1><h1>&nbsp;</h1><h1>&nbsp;</h1><h1>&nbsp;</h1><p>&nbsp;</p><p>&nbsp;</p><h1 style=\"color: white;\" data-mce-style=\"color: white;\"><strong>LIST OF AVAILABLE CARS</strong></h1>",
+		"displayValue": "<h1>&nbsp;</h1>\n<h1>&nbsp;</h1>\n<h1>&nbsp;</h1>\n<h1>&nbsp;</h1>\n<h1>&nbsp;</h1>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h1 style=\"color: white;\"><strong>LIST OF AVAILABLE CARS</strong></h1>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=d6c2bd9a970f4110002ffef3a253af18"/>
+</record_update>

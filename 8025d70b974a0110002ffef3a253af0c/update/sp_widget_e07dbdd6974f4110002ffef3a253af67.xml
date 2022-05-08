@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+ var c = this;
+    c.uiAction = function(action) {
+
+        c.data.action = action;
+
+ if (c.data.action == 'cancel') {
+var ans = confirm("Are you sure, you want to cancel this reservation?");
+      if (ans == true)
+	  update();
+ else
+		return false;
+ }
+
+			function update() {
+            c.server.update().then(function() {
+                c.data.action = undefined;
+                c.data.result = "completed";
+            });
+            window.setTimeout(restartscreen, 2000);
+
+            function restartscreen() {
+                location.reload(true);
+            }
+        }
+ };
+}	
+
+/*	$scope.cancelReservation = function() {
+	$scope.data.action='delete';
+	
+		spModal.confirm("Are you sure you want to cancel this reservation?").then(function(confirmed){
+				 if(confirmed){
+					c.server.update();
+				
+					 var url = '/car?id=reservations';
+					top.location.href = url;
+				 }
+			 });
+	
+	 
+	
+}*/
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.header {
+ background-color: #2b0c99 
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>crr_cancel_car_reservation</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>CRR CANCEL CAR RESERVATION</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[/*(function () {
+		var sysID = $sp.getParameter("sys_id");
+	
+	if(input){
+		var gr = new GlideRecord("x_616811_car_renta_scheduled_reservations");
+		gr.get(sysID);
+		gr.deleteRecord();
+	}
+})();*/
+
+(function executeRule(current, previous)  {
+    var gr = $sp.getRecord();
+
+    // Get table & sys_id
+  //  data.table = input.table || $sp.getParameter("table");
+    data.sys_id = $sp.getParameter("sys_id");
+
+
+    // Valid GlideRecord
+    gr = new GlideRecord('x_616811_car_renta_scheduled_reservations');
+	
+	
+		if (!gr.isValid())
+        return;
+
+    // Valid sys_id
+	
+    if (!gr.get(data.sys_id))
+        return;
+
+if (input && input.action) {
+        var action = input.action;
+ if (action == 'cancel')
+gr.deleteRecord();
+}
+
+})(current, previous);]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>nieltabar</sys_created_by>
+        <sys_created_on>2022-04-26 07:45:51</sys_created_on>
+        <sys_id>e07dbdd6974f4110002ffef3a253af67</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>CRR CANCEL CAR RESERVATION</sys_name>
+        <sys_package display_value="Car Rental Reservation" source="x_616811_car_renta">8025d70b974a0110002ffef3a253af0c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Rental Reservation">8025d70b974a0110002ffef3a253af0c</sys_scope>
+        <sys_update_name>sp_widget_e07dbdd6974f4110002ffef3a253af67</sys_update_name>
+        <sys_updated_by>nieltabar</sys_updated_by>
+        <sys_updated_on>2022-04-26 09:11:42</sys_updated_on>
+        <template><![CDATA[<div class="panel b ng-scope">
+    <div ng-if="data.states != 4"> <!--4 is the value of cancel -->
+        <div class="panel-heading bg-primary panel-la-jolla-default">Actions</div>
+        <div class="panel-body" >
+          <button type="button" class="btn btn-danger btn-block" ng-click="c.uiAction('cancel')">Cancel Car Reservation</button>
+        </div>
+      </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
